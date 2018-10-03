@@ -60,35 +60,17 @@
         </div>
       </nav>
 
-<!-- intro content 1 -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%"> 
-        </div>
-        <div class="col-md-4"> 
-          Placeholder text
-        </div>
-      </div>
 
-<!-- intro content 2 -->
 
     <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            Placeholder Text
-          </div>
-          <div class="col-md-8">
-              <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%"> 
-          </div>
-        </div>
+      
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
                 <div id="map" style='height:100%; width:100%'></div>
         </div>
         
-        <div class="col-md-6 infobar">
+        <div class="col-md-5 infobar">
             <div class="row">
                 <div id="countryname">COUNTRY NAME</div>
             </div>
@@ -589,7 +571,7 @@ function get_related_news(country_name){
   d3.json(url, function(data){
     console.log(data.articles);
     response = data.articles;
-    console.log(response[0].title);
+    console.log(response);
 
     var related_news = d3.select('#Newsfeed');
     related_news.html('');
@@ -599,9 +581,10 @@ function get_related_news(country_name){
         .append('div')
         .append('h4')
         .text(response[i].title)
-          .on("click", function() { 
-            window.open(response[i].url); 
-          })
+        .on("click", function() {
+          for (i = 0; i < 3; i++) {
+           window.open(response[i].url); 
+         }})
         .append('p')
         .text(response[i].description) 
     }
