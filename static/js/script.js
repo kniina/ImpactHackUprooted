@@ -55,7 +55,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
 
 // Adding tile layer
   // Link to GeoJSON
-  var Link = "./bounds_with_refugee_counts.geojson"
+  var Link = "static/bounds_with_refugee_counts.geojson"
   var geojson;
   // Grab data with d3
   d3.json(Link, function(data) {
@@ -85,7 +85,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
         }
       });
 
-    var totalrefugeesred = L.choropleth(data, {
+    var destinations = L.choropleth(data, {
       valueProperty: "Refugees",
       scale: ["#D3D3D3", "red"],
       steps: 11,
@@ -95,7 +95,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
         weight: 1,
         fillOpacity: 0.8,
       },
-      
+
       onEachFeature: function(feature, layer) {
         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
           //Function to update Country variable
@@ -103,14 +103,18 @@ $(".nav-tabs").on("click", "#envirotab", function () {
           layer.on('click', function (e) {
             country = feature.properties.iso_a3
             update_to_selected_region(country)
+            console.log(country);
+            d3.json(`/refugees_origin_destination/${country}`, function(json) {
+                console.log("newdata", json);
+            });
           })
         }
       })
 
 
-      //}); 
+      //});
 
-    createMap(totalrefugees, totalrefugeesred)
+    createMap(totalrefugees, destinations)
     }
 
 
@@ -118,7 +122,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
 
 
 
-  function createMap(totalrefugees, totalrefugeesred) {
+  function createMap(totalrefugees, destinations) {
     var basemap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
       attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
       maxZoom: 18,
@@ -130,19 +134,19 @@ $(".nav-tabs").on("click", "#envirotab", function () {
     }
     var overlayMaps = {
       "Total Refugees": totalrefugees,
-      "Total Refugees Red": totalrefugeesred
+      "Refugee Destinations": destinations
     }
     var myMap = L.map("map", {
         center: [40.4637, 3.7492],
         zoom: 2,
-        layers: [basemap, totalrefugeesred]
+        layers: [basemap, totalrefugees]
       });
   var legend = L.control({ position: "bottomright" });
   legend.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend");
-    var limits = totalrefugeesred.options.limits;
+    var limits = destinations.options.limits;
     console.log(limits)
-    var colors = totalrefugeesred.options.colors;
+    var colors = destinations.options.colors;
     console.log(colors)
     var labels = [];
     // Add min & max
@@ -166,7 +170,7 @@ L.control.layers(overlayMaps, baseMaps, {
   collapsed: false
 }).addTo(myMap);
 
- totalrefugeesred.eachLayer(function (layer) {
+ totalrefugees.eachLayer(function (layer) {
    layer._path.id = layer.feature.properties.iso_a3
      })
 
@@ -267,7 +271,6 @@ L.control.layers(overlayMaps, baseMaps, {
 
 // Pass our map layers into our layer control
 // Add the layer control to the map
-L.control.layers(overlayMaps, {
-  collapsed: true
-}).addTo(myMap);
-
+// L.control.layers(overlayMaps, {
+//   collapsed: true
+// }).addTo(myMap);
