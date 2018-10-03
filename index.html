@@ -581,35 +581,59 @@ scatter_svg.append("text")
 
 
 
+// // Uses selected country name to query the Google News API for country related refugee news
+// function get_related_news(country_name){
+
+//   var url = `https://newsapi.org/v2/everything?q=refugees%20and%20${country_name}&sortBy=relevance&apiKey=${apiKey}`
+  
+//   d3.json(url, function(data){
+//     console.log(data.articles);
+//     response = data.articles;
+//     console.log(response[0].title);
+
+//     var related_news = d3.select('#Newsfeed');
+//     related_news.html('');
+    
+//     for (i = 0; i < 3; i++) {
+//       related_news
+//         .append('div')
+//         .append('h4')
+//         .text(response[i].title)
+//           .on("click", function(i) { 
+//             window.open(response[i].url); 
+//           })
+//         .append('p')
+//         .text(response[i].description) 
+//     }
+//   });
+// };
+
 // Uses selected country name to query the Google News API for country related refugee news
 function get_related_news(country_name){
 
-  var url = `https://newsapi.org/v2/everything?q=refugees%20and%20${country_name}&sortBy=relevance&apiKey=${apiKey}`
-  
-  d3.json(url, function(data){
-    console.log(data.articles);
-    response = data.articles;
-    console.log(response[0].title);
+var url = `https://newsapi.org/v2/everything?q=refugees%20and%20${country_name}&sortBy=relevance&apiKey=${apiKey}`
 
-    var related_news = d3.select('#Newsfeed');
-    related_news.html('');
-    
-    for (i = 0; i < 3; i++) {
-      related_news
-        .append('div')
-        .append('h4')
-        .text(response[i].title)
-          .on("click", function() { 
-            window.open(response[i].url); 
-          })
-        .append('p')
-        .text(response[i].description) 
-    }
-  });
+d3.json(url, function(data){
+  console.log(data.articles);
+  response = data.articles;
+  console.log(response[0].title);
+
+  var related_news = d3.select('#Newsfeed');
+  related_news.html('');
+  
+  for (i = 0; i < 3; i++) {
+    related_news
+      .append('div')
+      .append('h4')
+      .text(response[i].title).html('<a href= "response[i].url"> </a>')
+      .append('p')
+      .text(response[i].description) 
+  }
+});
 };
 
 function init() {
-  search_term = 'refugees';
+  search_term = 'china';
   get_related_news(search_term);
 };
 
