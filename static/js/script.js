@@ -113,6 +113,10 @@ var myMap = L.map("map", {
         layer.on('click', function (e) {
           country = feature.properties.iso_a3
           update_to_selected_region(country)
+          // get_country_name(country)
+          // console.log(country + "COUNTRY")
+          get_related_news(country_dictionary[country])
+          console.log(country_dictionary[country] +"COUNTRY NAME")
         });
       }
 
@@ -165,3 +169,27 @@ var myMap = L.map("map", {
 L.control.layers(overlayMaps, {
   collapsed: true
 }).addTo(myMap);
+
+
+
+// Create RSS feed for Google Refugee News
+// google.load("feeds", "1");
+
+//     function initialize() {
+//       var feed = new google.feeds.Feed("http://fastpshb.appspot.com/feed/1/fastpshb");
+//       feed.load(function(result) {
+//         if (!result.error) {
+//           var container = document.getElementById("feed");
+//           for (var i = 0; i < result.feed.entries.length; i++) {
+//             var entry = result.feed.entries[i];
+//             var div = document.createElement("div");
+//             div.appendChild(document.createTextNode(entry.title));
+//             container.appendChild(div);
+//           }
+//         }
+//       });
+//     }
+//     google.setOnLoadCallback(initialize);
+
+
+    
