@@ -14,724 +14,768 @@
 12,COG,Republic of Congo,Political Freedoms Index,27.0
 13,CZE,Czech Republic,Political Freedoms Index,94.0
 14,CIV,Ivory Coast,Political Freedoms Index,52.0
-15,CIV,Ivory Coast,Political Freedoms Index,52.0
-16,BRB,Barbados,Political Freedoms Index,97.0
+15,BRB,Barbados,Political Freedoms Index,97.0
+16,STP,Sao Tome and Principe,Political Freedoms Index,81.0
 17,SWE,Sweden,Political Freedoms Index,100.0
 18,MUS,Mauritius,Political Freedoms Index,89.0
-19,UGA,Uganda,Political Freedoms Index,35.0
-20,UKR,Ukraine,Political Freedoms Index,61.0
-21,TKM,Turkmenistan,Political Freedoms Index,4.0
-22,UZB,Uzbekistan,Political Freedoms Index,3.0
-23,PAK,Pakistan,Political Freedoms Index,43.0
-24,SRB,Republic of Serbia,Political Freedoms Index,76.0
-25,ESP,Spain,Political Freedoms Index,94.0
-26,SUR,Suriname,Political Freedoms Index,77.0
-27,KOR,South Korea,Political Freedoms Index,82.0
-28,IRN,Iran,Political Freedoms Index,17.0
-29,AUT,Austria,Political Freedoms Index,95.0
-30,LAO,Laos,Political Freedoms Index,12.0
-31,LBR,Liberia,Political Freedoms Index,62.0
-32,KGZ,Kyrgyzstan,Political Freedoms Index,37.0
-33,MWI,Malawi,Political Freedoms Index,63.0
-34,SWZ,Swaziland,Political Freedoms Index,18.0
-35,SWZ,Swaziland,Political Freedoms Index,18.0
-36,PAN,Panama,Political Freedoms Index,83.0
-37,PRY,Paraguay,Political Freedoms Index,64.0
-38,PHL,Philippines,Political Freedoms Index,63.0
-39,RUS,Russia,Political Freedoms Index,20.0
-40,SAU,Saudi Arabia,Political Freedoms Index,10.0
-41,PRT,Portugal,Political Freedoms Index,97.0
-42,PER,Peru,Political Freedoms Index,72.0
-43,SSD,South Sudan,Political Freedoms Index,4.0
-44,CHE,Switzerland,Political Freedoms Index,96.0
-45,SMR,San Marino,Political Freedoms Index,97.0
-46,GAB,Gabon,Political Freedoms Index,32.0
-47,DEU,Germany,Political Freedoms Index,95.0
-48,GRC,Greece,Political Freedoms Index,84.0
-49,NOR,Norway,Political Freedoms Index,100.0
-50,NER,Niger,Political Freedoms Index,49.0
-51,SEN,Senegal,Political Freedoms Index,78.0
-52,ALB,Albania,Political Freedoms Index,68.0
-53,DZA,Algeria,Political Freedoms Index,35.0
-54,MLT,Malta,Political Freedoms Index,96.0
-55,MLI,Mali,Political Freedoms Index,45.0
-56,MDG,Madagascar,Political Freedoms Index,56.0
-57,MYS,Malaysia,Political Freedoms Index,44.0
-58,MDV,Maldives,Political Freedoms Index,40.0
-59,MAR,Morocco,Political Freedoms Index,41.0
-60,MEX,Mexico,Political Freedoms Index,65.0
-61,NAM,Namibia,Political Freedoms Index,77.0
-62,MNG,Mongolia,Political Freedoms Index,85.0
-63,MMR,Myanmar,Political Freedoms Index,32.0
-64,PRK,North Korea,Political Freedoms Index,3.0
-65,NPL,Nepal,Political Freedoms Index,52.0
-66,OMN,Oman,Political Freedoms Index,25.0
-67,NRU,Nauru,Political Freedoms Index,81.0
-68,NLD,Netherlands,Political Freedoms Index,99.0
-69,NGA,Nigeria,Political Freedoms Index,50.0
-70,NZL,New Zealand,Political Freedoms Index,98.0
-71,NIC,Nicaragua,Political Freedoms Index,47.0
-72,POL,Poland,Political Freedoms Index,89.0
-73,PNG,Papua New Guinea,Political Freedoms Index,64.0
-74,SYR,Syria,Political Freedoms Index,-1.0
-75,SDN,Sudan,Political Freedoms Index,6.0
-76,LKA,Sri Lanka,Political Freedoms Index,56.0
-77,TZA,United Republic of Tanzania,Political Freedoms Index,58.0
-78,BLZ,Belize,Political Freedoms Index,87.0
-79,BGD,Bangladesh,Political Freedoms Index,47.0
-80,BEL,Belgium,Political Freedoms Index,95.0
-81,BHS,The Bahamas,Political Freedoms Index,91.0
-82,DOM,Dominican Republic,Political Freedoms Index,68.0
-83,MHL,Marshall Islands,Political Freedoms Index,92.0
-84,VCT,Saint Vincent and the Grenadines,Political Freedoms Index,91.0
-85,SVN,Slovenia,Political Freedoms Index,92.0
-86,MOZ,Mozambique,Political Freedoms Index,53.0
-87,SVK,Slovakia,Political Freedoms Index,89.0
-88,SOM,Somalia,Political Freedoms Index,5.0
-89,AUS,Australia,Political Freedoms Index,98.0
-90,AGO,Angola,Political Freedoms Index,24.0
-91,BOL,Bolivia,Political Freedoms Index,68.0
-92,BWA,Botswana,Political Freedoms Index,72.0
-93,BGR,Bulgaria,Political Freedoms Index,80.0
-94,BRA,Brazil,Political Freedoms Index,79.0
-95,BFA,Burkina Faso,Political Freedoms Index,63.0
-96,CMR,Cameroon,Political Freedoms Index,24.0
-97,SGP,Singapore,Political Freedoms Index,51.0
-98,SLE,Sierra Leone,Political Freedoms Index,66.0
-99,ZAF,South Africa,Political Freedoms Index,78.0
-100,TUR,Turkey,Political Freedoms Index,38.0
-101,TUN,Tunisia,Political Freedoms Index,78.0
-102,GBR,United Kingdom,Political Freedoms Index,95.0
-103,ARE,United Arab Emirates,Political Freedoms Index,20.0
-104,URY,Uruguay,Political Freedoms Index,98.0
-105,ZMB,Zambia,Political Freedoms Index,56.0
-106,DMA,Dominica,Political Freedoms Index,95.0
-107,LCA,Saint Lucia,Political Freedoms Index,92.0
-108,GEO,Georgia,Political Freedoms Index,64.0
-109,GIN,Guinea,Political Freedoms Index,41.0
-110,GHA,Ghana,Political Freedoms Index,83.0
-111,IRQ,Iraq,Political Freedoms Index,27.0
-112,IRL,Ireland,Political Freedoms Index,96.0
-113,HND,Honduras,Political Freedoms Index,46.0
-114,IND,India,Political Freedoms Index,77.0
-115,KNA,Saint Kitts and Nevis,Political Freedoms Index,89.0
-116,LVA,Latvia,Political Freedoms Index,87.0
-117,HRV,Croatia,Political Freedoms Index,87.0
-118,ATG,Antigua and Barbuda,Political Freedoms Index,83.0
-119,AND,Andorra,Political Freedoms Index,95.0
-120,AFG,Afghanistan,Political Freedoms Index,24.0
-121,AZE,Azerbaijan,Political Freedoms Index,14.0
-122,BLR,Belarus,Political Freedoms Index,20.0
-123,BEN,Benin,Political Freedoms Index,82.0
-124,KHM,Cambodia,Political Freedoms Index,31.0
-125,BIH,Bosnia and Herzegovina,Political Freedoms Index,55.0
-126,CHN,China,Political Freedoms Index,15.0
-127,CAN,Canada,Political Freedoms Index,99.0
-128,CAF,Central African Republic,Political Freedoms Index,10.0
-129,CHL,Chile,Political Freedoms Index,94.0
-130,COL,Colombia,Political Freedoms Index,64.0
-131,TCD,Chad,Political Freedoms Index,18.0
-132,CUB,Cuba,Political Freedoms Index,15.0
-133,DNK,Denmark,Political Freedoms Index,97.0
-134,FIN,Finland,Political Freedoms Index,100.0
-135,ETH,Ethiopia,Political Freedoms Index,12.0
-136,FJI,Fiji,Political Freedoms Index,59.0
-137,ECU,Ecuador,Political Freedoms Index,57.0
-138,ERI,Eritrea,Political Freedoms Index,3.0
-139,EGY,Egypt,Political Freedoms Index,26.0
-140,FRA,France,Political Freedoms Index,90.0
-141,EST,Estonia,Political Freedoms Index,94.0
-142,GNB,Guinea Bissau,Political Freedoms Index,40.0
-143,IDN,Indonesia,Political Freedoms Index,65.0
-144,GUY,Guyana,Political Freedoms Index,74.0
-145,HUN,Hungary,Political Freedoms Index,76.0
-146,ISL,Iceland,Political Freedoms Index,97.0
-147,KEN,Kenya,Political Freedoms Index,51.0
-148,ITA,Italy,Political Freedoms Index,89.0
-149,KAZ,Kazakhstan,Political Freedoms Index,22.0
-150,JPN,Japan,Political Freedoms Index,96.0
-151,LTU,Lithuania,Political Freedoms Index,91.0
-152,LBY,Libya,Political Freedoms Index,13.0
-153,MDA,Moldova,Political Freedoms Index,62.0
-154,COM,Comoros,Political Freedoms Index,55.0
-155,GRD,Grenada,Political Freedoms Index,89.0
-156,BRN,Brunei,Political Freedoms Index,29.0
-157,BDI,Burundi,Political Freedoms Index,19.0
-158,BTN,Bhutan,Political Freedoms Index,55.0
-159,ARM,Armenia,Political Freedoms Index,45.0
-160,DJI,Djibouti,Political Freedoms Index,26.0
-161,GNQ,Equatorial Guinea,Political Freedoms Index,8.0
-162,CPV,Cape Verde,Political Freedoms Index,90.0
-163,CYP,Cyprus,Political Freedoms Index,94.0
-164,PLW,Palau,Political Freedoms Index,92.0
-165,SLV,El Salvador,Political Freedoms Index,70.0
-166,GMB,Gambia,Political Freedoms Index,20.0
-167,GTM,Guatemala,Political Freedoms Index,54.0
-168,HTI,Haiti,Political Freedoms Index,39.0
-169,JOR,Jordan,Political Freedoms Index,37.0
-170,ISR,Israel,Political Freedoms Index,80.0
-171,KWT,Kuwait,Political Freedoms Index,36.0
-172,FSM,Federated States of Micronesia,Political Freedoms Index,93.0
-173,JAM,Jamaica,Political Freedoms Index,75.0
-174,TTO,Trinidad and Tobago,Political Freedoms Index,81.0
-175,LBN,Lebanon,Political Freedoms Index,44.0
-176,QAT,Qatar,Political Freedoms Index,26.0
-177,LSO,Lesotho,Political Freedoms Index,64.0
-178,MKD,Macedonia,Political Freedoms Index,57.0
-179,MNE,Montenegro,Political Freedoms Index,69.0
-180,RWA,Rwanda,Political Freedoms Index,24.0
-181,TON,Tonga,Political Freedoms Index,74.0
-182,SYC,Seychelles,Political Freedoms Index,71.0
-183,TGO,Togo,Political Freedoms Index,48.0
-184,THA,Thailand,GDP,401399422442.967
-185,TJK,Tajikistan,GDP,7853450374.0001
-186,ARG,Argentina,GDP,594749285413.212
-187,MRT,Mauritania,GDP,4844223106.95469
-188,MCO,Monaco,GDP,
-189,ZWE,Zimbabwe,GDP,16304667800.0
-190,YEM,Yemen,GDP,34602480338.778
-191,BHR,Bahrain,GDP,31125851063.8298
-192,VNM,Vietnam,GDP,193241108709.536
-193,VEN,Venezuela,GDP,
-194,CRI,Costa Rica,GDP,54775972988.7322
-195,COD,Democratic Republic of the Congo,GDP,37917704900.1192
-196,COG,Republic of Congo,GDP,8553154580.39951
-197,CZE,Czech Republic,GDP,186829940545.759
-198,CIV,Ivory Coast,GDP,33145096414.0731
-199,CIV,Ivory Coast,GDP,33145096414.0731
-200,BRB,Barbados,GDP,4584150000.0
-201,SWE,Sweden,GDP,497918109302.399
-202,MUS,Mauritius,GDP,11692287066.381
-203,UGA,Uganda,GDP,27102650471.5604
-204,UKR,Ukraine,GDP,91030959454.6961
-205,TKM,Turkmenistan,GDP,35799628571.4286
-206,UZB,Uzbekistan,GDP,66903804142.5395
-207,PAK,Pakistan,GDP,270556126820.064
-208,SRB,Republic of Serbia,GDP,37160332465.1645
-209,ESP,Spain,GDP,1197789902774.43
-210,SUR,Suriname,GDP,4826587057.68724
-211,KOR,South Korea,GDP,1382764027113.82
-212,IRN,Iran,GDP,385874474398.59
-213,AUT,Austria,GDP,382065930307.978
-214,LAO,Laos,GDP,14390391264.2607
-215,LBR,Liberia,GDP,2034000000.0
-216,KGZ,Kyrgyzstan,GDP,6678178340.45121
-217,MWI,Malawi,GDP,6373201160.03248
-218,SWZ,Swaziland,GDP,4020275298.02726
-219,SWZ,Swaziland,GDP,
-220,PAN,Panama,GDP,54315722500.0
-221,PRY,Paraguay,GDP,27282581335.7964
-222,PHL,Philippines,GDP,292774099014.19
-223,RUS,Russia,GDP,1368400705491.02
-224,SAU,Saudi Arabia,GDP,654269902888.715
-225,PRT,Portugal,GDP,199420256049.689
-226,PER,Peru,GDP,189926516769.25
-227,SSD,South Sudan,GDP,10906867789.8878
-228,CHE,Switzerland,GDP,679289166858.236
-229,SMR,San Marino,GDP,1569258068.0936
-230,GAB,Gabon,GDP,14377389785.603
-231,DEU,Germany,GDP,3375611100742.22
-232,GRC,Greece,GDP,195541761243.144
-233,NOR,Norway,GDP,386663139402.707
-234,NER,Niger,GDP,7251323996.0562
-235,SEN,Senegal,GDP,13640668374.1652
-236,ALB,Albania,GDP,11386931489.7968
-237,DZA,Algeria,GDP,165874330876.321
-238,MLT,Malta,GDP,10574026838.1945
-239,MLI,Mali,GDP,13100058099.804
-240,MDG,Madagascar,GDP,9744243531.20119
-241,MYS,Malaysia,GDP,296434003328.639
-242,MDV,Maldives,GDP,4006531188.37977
-243,MAR,Morocco,GDP,100593283696.732
-244,MEX,Mexico,GDP,1169622672463.29
-245,NAM,Namibia,GDP,11769045771.9709
-246,MNG,Mongolia,GDP,11749620619.5962
-247,MMR,Myanmar,GDP,59687373958.2574
-248,PRK,North Korea,GDP,
-249,NPL,Nepal,GDP,21410840908.5198
-250,OMN,Oman,GDP,68905071521.4564
-251,NRU,Nauru,GDP,100459782.608696
-252,NLD,Netherlands,GDP,757999453314.269
-253,NGA,Nigeria,GDP,481066152888.967
-254,NZL,New Zealand,GDP,177620948761.31
-255,NIC,Nicaragua,GDP,12611087031.4931
-256,POL,Poland,GDP,477355617455.896
-257,PNG,Papua New Guinea,GDP,20638636035.255
-258,SYR,Syria,GDP,
-259,SDN,Sudan,GDP,97156119150.0
-260,LKA,Sri Lanka,GDP,80554807486.3911
-261,TZA,United Republic of Tanzania,GDP,45623490991.5407
-262,BLZ,Belize,GDP,1778567600.0
-263,BGD,Bangladesh,GDP,195078665827.565
-264,BEL,Belgium,GDP,455039563132.776
-265,BHS,The Bahamas,GDP,11792300000.0
-266,DOM,Dominican Republic,GDP,68802092020.9448
-267,MHL,Marshall Islands,GDP,179697900.0
-268,VCT,Saint Vincent and the Grenadines,GDP,756666666.666667
-269,SVN,Slovenia,GDP,43072415017.4321
-270,MOZ,Mozambique,GDP,14798399862.4398
-271,SVK,Slovakia,GDP,87501423882.4686
-272,SOM,Somalia,GDP,6631336625.14941
-273,AUS,Australia,GDP,1349034029453.37
-274,AGO,Angola,GDP,102621215573.456
-275,BOL,Bolivia,GDP,33000198263.3864
-276,BWA,Botswana,GDP,14420551446.4623
-277,BGR,Bulgaria,GDP,50199104511.4487
-278,BRA,Brazil,GDP,1802214373741.32
-279,BFA,Burkina Faso,GDP,10419303761.3524
-280,CMR,Cameroon,GDP,30916218544.4404
-281,SGP,Singapore,GDP,304097759674.134
-282,SLE,Sierra Leone,GDP,4218723875.13704
-283,ZAF,South Africa,GDP,317741039197.848
-284,TUR,Turkey,GDP,859796872794.118
-285,TUN,Tunisia,GDP,43156708809.1354
-286,GBR,United Kingdom,GDP,2885570309160.86
-287,ARE,United Arab Emirates,GDP,358135057862.492
-288,URY,Uruguay,GDP,53274304222.136
-289,ZMB,Zambia,GDP,21154394545.895
-290,DMA,Dominica,GDP,535095851.851852
-291,LCA,Saint Lucia,GDP,1649142629.62963
-292,GEO,Georgia,GDP,13993546732.4726
-293,GIN,Guinea,GDP,8857789705.63763
-294,GHA,Ghana,GDP,37338430643.4024
-295,IRQ,Iraq,GDP,179640210726.448
-296,IRL,Ireland,GDP,290617008367.572
-297,HND,Honduras,GDP,20979767785.2104
-298,IND,India,GDP,2102390808997.09
-299,KNA,Saint Kitts and Nevis,GDP,878281518.518518
-300,LVA,Latvia,GDP,26972863393.6384
-301,HRV,Croatia,GDP,49425513611.2448
-302,ATG,Antigua and Barbuda,GDP,1364863037.03704
-303,AND,Andorra,GDP,2811489408.89431
-304,AFG,Afghanistan,GDP,19215562179.0117
-305,AZE,Azerbaijan,GDP,53074370486.0433
-306,BLR,Belarus,GDP,56454734396.5842
-307,BEN,Benin,GDP,8291155880.59505
-308,KHM,Cambodia,GDP,18049954289.4229
-309,BIH,Bosnia and Herzegovina,GDP,16209702863.6235
-310,CHN,China,GDP,11064666282625.5
-311,CAN,Canada,GDP,1559623393038.66
-312,CAF,Central African Republic,GDP,1583776805.96568
-313,CHL,Chile,GDP,243999477737.94
-314,COL,Colombia,GDP,291519591532.951
-315,TCD,Chad,GDP,10985793715.2707
-316,CUB,Cuba,GDP,87132800000.0
-317,DNK,Denmark,GDP,301298464861.385
-318,FIN,Finland,GDP,232464833065.554
-319,ETH,Ethiopia,GDP,64464547915.2698
-320,FJI,Fiji,GDP,4362128146.45309
-321,ECU,Ecuador,GDP,99290381000.0
-322,ERI,Eritrea,GDP,
-323,EGY,Egypt,GDP,332698041030.807
-324,FRA,France,GDP,2438207896251.84
-325,EST,Estonia,GDP,22566956982.229
-326,GNB,Guinea Bissau,GDP,1047808174.95585
-327,IDN,Indonesia,GDP,860854235065.079
-328,GUY,Guyana,GDP,3166029055.69007
-329,HUN,Hungary,GDP,122879042001.915
-330,ISL,Iceland,GDP,16942247373.9704
-331,KEN,Kenya,GDP,64007293814.8755
-332,ITA,Italy,GDP,1832868490534.11
-333,KAZ,Kazakhstan,GDP,184388432148.715
-334,JPN,Japan,GDP,4394977752877.82
-335,LTU,Lithuania,GDP,41508609232.7778
-336,LBY,Libya,GDP,29274816453.7864
-337,MDA,Moldova,GDP,6512899540.34594
-338,COM,Comoros,GDP,565689764.632629
-339,GRD,Grenada,GDP,997007925.925926
-340,BRN,Brunei,GDP,12930394937.8137
-341,BDI,Burundi,GDP,3066681386.75112
-342,BTN,Bhutan,GDP,2059258652.94668
-343,ARM,Armenia,GDP,10553337672.9872
-344,DJI,Djibouti,GDP,1633741922.68737
-345,GNQ,Equatorial Guinea,GDP,13180194732.94
-346,CPV,Cape Verde,GDP,1596154666.48019
-347,CYP,Cyprus,GDP,19676167239.6584
-348,PLW,Palau,GDP,293082900.0
-349,SLV,El Salvador,GDP,23166030400.0
-350,GMB,Gambia,GDP,907655651.525834
-351,GTM,Guatemala,GDP,63767597193.9175
-352,HTI,Haiti,GDP,8724656126.49849
-353,JOR,Jordan,GDP,37517410281.6901
-354,ISR,Israel,GDP,299093839689.55
-355,KWT,Kuwait,GDP,114567298105.683
-356,FSM,Federated States of Micronesia,GDP,315179700.0
-357,JAM,Jamaica,GDP,14186886642.6685
-358,TTO,Trinidad and Tobago,GDP,24402499451.187
-359,LBN,Lebanon,GDP,49459296463.2836
-360,QAT,Qatar,GDP,164641483516.484
-361,LSO,Lesotho,GDP,2505879959.51217
-362,MKD,Macedonia,GDP,10051659161.1733
-363,MNE,Montenegro,GDP,4052913385.82677
-364,RWA,Rwanda,GDP,8277613193.57631
-365,TON,Tonga,GDP,435438217.281663
-366,SYC,Seychelles,GDP,1375604279.45443
-367,TGO,Togo,GDP,4087775414.97626
-368,THA,Thailand,"Water Stress, All Sectors",1.698024036
-369,TJK,Tajikistan,"Water Stress, All Sectors",3.5280262
-370,ARG,Argentina,"Water Stress, All Sectors",2.513094514
-371,MRT,Mauritania,"Water Stress, All Sectors",0.604108712
-372,MCO,Monaco,"Water Stress, All Sectors",2.664468084
-373,ZWE,Zimbabwe,"Water Stress, All Sectors",0.64041833
-374,YEM,Yemen,"Water Stress, All Sectors",4.674046102
-375,BHR,Bahrain,"Water Stress, All Sectors",5.0
-376,VNM,Vietnam,"Water Stress, All Sectors",1.008669435
-377,VEN,Venezuela,"Water Stress, All Sectors",2.299918259
-378,CRI,Costa Rica,"Water Stress, All Sectors",1.941371802
-379,COD,Democratic Republic of the Congo,"Water Stress, All Sectors",0.006045932
-380,COG,Republic of Congo,"Water Stress, All Sectors",0.427577452
-381,CZE,Czech Republic,"Water Stress, All Sectors",1.134582989
-382,CIV,Ivory Coast,"Water Stress, All Sectors",0.044008016
-383,CIV,Ivory Coast,"Water Stress, All Sectors",0.044008016
-384,BRB,Barbados,"Water Stress, All Sectors",5.0
-385,SWE,Sweden,"Water Stress, All Sectors",1.304243204
-386,MUS,Mauritius,"Water Stress, All Sectors",0.0
-387,UGA,Uganda,"Water Stress, All Sectors",0.000342989
-388,UKR,Ukraine,"Water Stress, All Sectors",2.095905385
-389,TKM,Turkmenistan,"Water Stress, All Sectors",4.29960978
-390,UZB,Uzbekistan,"Water Stress, All Sectors",4.316671945
-391,PAK,Pakistan,"Water Stress, All Sectors",4.31002513
-392,SRB,Republic of Serbia,"Water Stress, All Sectors",0.583519
-393,ESP,Spain,"Water Stress, All Sectors",3.725614481
-394,SUR,Suriname,"Water Stress, All Sectors",0.253345091
-395,KOR,South Korea,"Water Stress, All Sectors",3.543805295
-396,IRN,Iran,"Water Stress, All Sectors",4.781554087
-397,AUT,Austria,"Water Stress, All Sectors",0.322035824
-398,LAO,Laos,"Water Stress, All Sectors",0.014155122
-399,LBR,Liberia,"Water Stress, All Sectors",0.273278189
-400,KGZ,Kyrgyzstan,"Water Stress, All Sectors",4.821997893
-401,MWI,Malawi,"Water Stress, All Sectors",0.105264432
-402,SWZ,Swaziland,"Water Stress, All Sectors",3.105143962
-403,SWZ,Swaziland,"Water Stress, All Sectors",3.105143962
-404,PAN,Panama,"Water Stress, All Sectors",0.422002909
-405,PRY,Paraguay,"Water Stress, All Sectors",0.011150345
-406,PHL,Philippines,"Water Stress, All Sectors",3.333262336
-407,RUS,Russia,"Water Stress, All Sectors",1.234853329
-408,SAU,Saudi Arabia,"Water Stress, All Sectors",4.992350923
-409,PRT,Portugal,"Water Stress, All Sectors",3.338300161
-410,PER,Peru,"Water Stress, All Sectors",3.20160863
-411,SSD,South Sudan,"Water Stress, All Sectors",0.0
-412,CHE,Switzerland,"Water Stress, All Sectors",1.064087164
-413,SMR,San Marino,"Water Stress, All Sectors",5.0
-414,GAB,Gabon,"Water Stress, All Sectors",1.559075188
-415,DEU,Germany,"Water Stress, All Sectors",1.895268618
-416,GRC,Greece,"Water Stress, All Sectors",3.27257144
-417,NOR,Norway,"Water Stress, All Sectors",0.400524984
-418,NER,Niger,"Water Stress, All Sectors",0.112430873
-419,SEN,Senegal,"Water Stress, All Sectors",0.21481397
-420,ALB,Albania,"Water Stress, All Sectors",1.895065503
-421,DZA,Algeria,"Water Stress, All Sectors",3.444266526
-422,MLT,Malta,"Water Stress, All Sectors",5.0
-423,MLI,Mali,"Water Stress, All Sectors",0.204415117
-424,MDG,Madagascar,"Water Stress, All Sectors",1.247565555
-425,MYS,Malaysia,"Water Stress, All Sectors",2.087355521
-426,MDV,Maldives,"Water Stress, All Sectors",0.0
-427,MAR,Morocco,"Water Stress, All Sectors",4.23604685
-428,MEX,Mexico,"Water Stress, All Sectors",3.516053768
-429,NAM,Namibia,"Water Stress, All Sectors",1.882401311
-430,MNG,Mongolia,"Water Stress, All Sectors",4.046933749
-431,MMR,Myanmar,"Water Stress, All Sectors",0.303092379
-432,PRK,North Korea,"Water Stress, All Sectors",2.059944861
-433,NPL,Nepal,"Water Stress, All Sectors",2.402084479
-434,OMN,Oman,"Water Stress, All Sectors",4.913785867
-435,NRU,Nauru,"Water Stress, All Sectors",0.0
-436,NLD,Netherlands,"Water Stress, All Sectors",1.728848212
-437,NGA,Nigeria,"Water Stress, All Sectors",0.293372329
-438,NZL,New Zealand,"Water Stress, All Sectors",1.351785653
-439,NIC,Nicaragua,"Water Stress, All Sectors",1.010015863
-440,POL,Poland,"Water Stress, All Sectors",1.307267036
-441,PNG,Papua New Guinea,"Water Stress, All Sectors",0.596268378
-442,SYR,Syria,"Water Stress, All Sectors",3.851932965
-443,SDN,Sudan,"Water Stress, All Sectors",0.912859496
-444,LKA,Sri Lanka,"Water Stress, All Sectors",3.007874921
-445,TZA,United Republic of Tanzania,"Water Stress, All Sectors",1.498342011
-446,BLZ,Belize,"Water Stress, All Sectors",1.347722344
-447,BGD,Bangladesh,"Water Stress, All Sectors",0.64753444
-448,BEL,Belgium,"Water Stress, All Sectors",3.164518106
-449,BHS,The Bahamas,"Water Stress, All Sectors",0.0
-450,DOM,Dominican Republic,"Water Stress, All Sectors",3.487299185
-451,MHL,Marshall Islands,"Water Stress, All Sectors",0.0
-452,VCT,Saint Vincent and the Grenadines,"Water Stress, All Sectors",5.0
-453,SVN,Slovenia,"Water Stress, All Sectors",0.027711066
-454,MOZ,Mozambique,"Water Stress, All Sectors",0.824086669
-455,SVK,Slovakia,"Water Stress, All Sectors",0.197465692
-456,SOM,Somalia,"Water Stress, All Sectors",0.455283361
-457,AUS,Australia,"Water Stress, All Sectors",3.511488236
-458,AGO,Angola,"Water Stress, All Sectors",1.539987159
-459,BOL,Bolivia,"Water Stress, All Sectors",0.677154647
-460,BWA,Botswana,"Water Stress, All Sectors",1.362974038
-461,BGR,Bulgaria,"Water Stress, All Sectors",1.265797656
-462,BRA,Brazil,"Water Stress, All Sectors",0.914442268
-463,BFA,Burkina Faso,"Water Stress, All Sectors",4.45e-06
-464,CMR,Cameroon,"Water Stress, All Sectors",0.107044034
-465,SGP,Singapore,"Water Stress, All Sectors",5.0
-466,SLE,Sierra Leone,"Water Stress, All Sectors",0.508070552
-467,ZAF,South Africa,"Water Stress, All Sectors",3.040457185
-468,TUR,Turkey,"Water Stress, All Sectors",3.020969689
-469,TUN,Tunisia,"Water Stress, All Sectors",3.441952849
-470,GBR,United Kingdom,"Water Stress, All Sectors",2.628114968
-471,ARE,United Arab Emirates,"Water Stress, All Sectors",5.0
-472,URY,Uruguay,"Water Stress, All Sectors",0.863199369
-473,ZMB,Zambia,"Water Stress, All Sectors",0.07768468
-474,DMA,Dominica,"Water Stress, All Sectors",5.0
-475,LCA,Saint Lucia,"Water Stress, All Sectors",5.0
-476,GEO,Georgia,"Water Stress, All Sectors",1.511845034
-477,GIN,Guinea,"Water Stress, All Sectors",0.058241578
-478,GHA,Ghana,"Water Stress, All Sectors",0.108839883
-479,IRQ,Iraq,"Water Stress, All Sectors",3.483184717
-480,IRL,Ireland,"Water Stress, All Sectors",2.917039654
-481,HND,Honduras,"Water Stress, All Sectors",0.068147511
-482,IND,India,"Water Stress, All Sectors",3.584886835
-483,KNA,Saint Kitts and Nevis,"Water Stress, All Sectors",0.0
-484,LVA,Latvia,"Water Stress, All Sectors",0.351614149
-485,HRV,Croatia,"Water Stress, All Sectors",0.017393729
-486,ATG,Antigua and Barbuda,"Water Stress, All Sectors",5.0
-487,AND,Andorra,"Water Stress, All Sectors",3.326590774
-488,AFG,Afghanistan,"Water Stress, All Sectors",4.009097519
-489,AZE,Azerbaijan,"Water Stress, All Sectors",3.391520168
-490,BLR,Belarus,"Water Stress, All Sectors",0.591421484
-491,BEN,Benin,"Water Stress, All Sectors",0.0
-492,KHM,Cambodia,"Water Stress, All Sectors",0.44228084
-493,BIH,Bosnia and Herzegovina,"Water Stress, All Sectors",0.01993265
-494,CHN,China,"Water Stress, All Sectors",2.944768721
-495,CAN,Canada,"Water Stress, All Sectors",1.205766615
-496,CAF,Central African Republic,"Water Stress, All Sectors",0.0
-497,CHL,Chile,"Water Stress, All Sectors",3.205366192
-498,COL,Colombia,"Water Stress, All Sectors",0.327354232
-499,TCD,Chad,"Water Stress, All Sectors",0.522388601
-500,CUB,Cuba,"Water Stress, All Sectors",3.192193495
-501,DNK,Denmark,"Water Stress, All Sectors",0.95293102
-502,FIN,Finland,"Water Stress, All Sectors",0.982448977
-503,ETH,Ethiopia,"Water Stress, All Sectors",0.611776827
-504,FJI,Fiji,"Water Stress, All Sectors",0.0
-505,ECU,Ecuador,"Water Stress, All Sectors",1.860604233
-506,ERI,Eritrea,"Water Stress, All Sectors",3.018732069
-507,EGY,Egypt,"Water Stress, All Sectors",1.327987529
-508,FRA,France,"Water Stress, All Sectors",1.750634001
-509,EST,Estonia,"Water Stress, All Sectors",2.750275178
-510,GNB,Guinea Bissau,"Water Stress, All Sectors",0.166057843
-511,IDN,Indonesia,"Water Stress, All Sectors",3.264861142
-512,GUY,Guyana,"Water Stress, All Sectors",1.77932534
-513,HUN,Hungary,"Water Stress, All Sectors",0.49486483
-514,ISL,Iceland,"Water Stress, All Sectors",0.136669564
-515,KEN,Kenya,"Water Stress, All Sectors",0.682811601
-516,ITA,Italy,"Water Stress, All Sectors",3.350267831
-517,KAZ,Kazakhstan,"Water Stress, All Sectors",4.018548002
-518,JPN,Japan,"Water Stress, All Sectors",3.054321889
-519,LTU,Lithuania,"Water Stress, All Sectors",1.193841419
-520,LBY,Libya,"Water Stress, All Sectors",4.84021236
-521,MDA,Moldova,"Water Stress, All Sectors",1.462672144
-522,COM,Comoros,"Water Stress, All Sectors",5.0
-523,GRD,Grenada,"Water Stress, All Sectors",0.0
-524,BRN,Brunei,"Water Stress, All Sectors",0.008372069
-525,BDI,Burundi,"Water Stress, All Sectors",0.0
-526,BTN,Bhutan,"Water Stress, All Sectors",0.450201544
-527,ARM,Armenia,"Water Stress, All Sectors",3.067362647
-528,DJI,Djibouti,"Water Stress, All Sectors",3.390809163
-529,GNQ,Equatorial Guinea,"Water Stress, All Sectors",0.536396053
-530,CPV,Cape Verde,"Water Stress, All Sectors",0.0
-531,CYP,Cyprus,"Water Stress, All Sectors",5.0
-532,PLW,Palau,"Water Stress, All Sectors",0.0
-533,SLV,El Salvador,"Water Stress, All Sectors",1.494649349
-534,GMB,Gambia,"Water Stress, All Sectors",0.416833845
-535,GTM,Guatemala,"Water Stress, All Sectors",1.010346498
-536,HTI,Haiti,"Water Stress, All Sectors",2.375955
-537,JOR,Jordan,"Water Stress, All Sectors",4.594449768
-538,ISR,Israel,"Water Stress, All Sectors",4.825385575
-539,KWT,Kuwait,"Water Stress, All Sectors",4.964874491
-540,FSM,Federated States of Micronesia,"Water Stress, All Sectors",0.0
-541,JAM,Jamaica,"Water Stress, All Sectors",5.0
-542,TTO,Trinidad and Tobago,"Water Stress, All Sectors",5.0
-543,LBN,Lebanon,"Water Stress, All Sectors",4.540996616
-544,QAT,Qatar,"Water Stress, All Sectors",5.0
-545,LSO,Lesotho,"Water Stress, All Sectors",3.972669119
-546,MKD,Macedonia,"Water Stress, All Sectors",2.645752234
-547,MNE,Montenegro,"Water Stress, All Sectors",0.308810807
-548,RWA,Rwanda,"Water Stress, All Sectors",0.0
-549,TON,Tonga,"Water Stress, All Sectors",0.0
-550,SYC,Seychelles,"Water Stress, All Sectors",0.0
-551,TGO,Togo,"Water Stress, All Sectors",0.120468399
-552,THA,Thailand,Number of Refugees from each Country to USA,235.0
-553,TJK,Tajikistan,Number of Refugees from each Country to USA,1852.0
-554,ARG,Argentina,Number of Refugees from each Country to USA,1082.0
-555,MRT,Mauritania,Number of Refugees from each Country to USA,16203.0
-556,MCO,Monaco,Number of Refugees from each Country to USA,19.0
-557,ZWE,Zimbabwe,Number of Refugees from each Country to USA,15360.0
-558,YEM,Yemen,Number of Refugees from each Country to USA,3979.0
-559,BHR,Bahrain,Number of Refugees from each Country to USA,333.0
-560,VNM,Vietnam,Number of Refugees from each Country to USA,2599.0
-561,VEN,Venezuela,Number of Refugees from each Country to USA,59963.0
-562,CRI,Costa Rica,Number of Refugees from each Country to USA,959.0
-563,COD,Democratic Republic of the Congo,Number of Refugees from each Country to USA,10423.0
-564,COG,Republic of Congo,Number of Refugees from each Country to USA,17259.0
-565,CZE,Czech Republic,Number of Refugees from each Country to USA,296.0
-566,CIV,Ivory Coast,Number of Refugees from each Country to USA,14127.0
-567,CIV,Ivory Coast,Number of Refugees from each Country to USA,1389.0
-568,BRB,Barbados,Number of Refugees from each Country to USA,13.0
-569,SWE,Sweden,Number of Refugees from each Country to USA,86.0
-570,MUS,Mauritius,Number of Refugees from each Country to USA,179.0
-571,UGA,Uganda,Number of Refugees from each Country to USA,13006.0
-572,UKR,Ukraine,Number of Refugees from each Country to USA,15322.0
-573,TKM,Turkmenistan,Number of Refugees from each Country to USA,2534.0
-574,UZB,Uzbekistan,Number of Refugees from each Country to USA,15434.0
-575,PAK,Pakistan,Number of Refugees from each Country to USA,33036.0
-576,SRB,Republic of Serbia,Number of Refugees from each Country to USA,17571.0
-577,ESP,Spain,Number of Refugees from each Country to USA,109.0
-578,SUR,Suriname,Number of Refugees from each Country to USA,140.0
-579,KOR,South Korea,Number of Refugees from each Country to USA,263.0
-580,IRN,Iran,Number of Refugees from each Country to USA,51713.0
-581,AUT,Austria,Number of Refugees from each Country to USA,37.0
-582,LAO,Laos,Number of Refugees from each Country to USA,2195.0
-583,LBR,Liberia,Number of Refugees from each Country to USA,25889.0
-584,KGZ,Kyrgyzstan,Number of Refugees from each Country to USA,6918.0
-585,MWI,Malawi,Number of Refugees from each Country to USA,350.0
-586,SWZ,Swaziland,Number of Refugees from each Country to USA,25.0
-587,SWZ,Swaziland,Number of Refugees from each Country to USA,25.0
-588,PAN,Panama,Number of Refugees from each Country to USA,275.0
-589,PRY,Paraguay,Number of Refugees from each Country to USA,234.0
-590,PHL,Philippines,Number of Refugees from each Country to USA,2565.0
-591,RUS,Russia,Number of Refugees from each Country to USA,65201.0
-592,SAU,Saudi Arabia,Number of Refugees from each Country to USA,1955.0
-593,PRT,Portugal,Number of Refugees from each Country to USA,72.0
-594,PER,Peru,Number of Refugees from each Country to USA,11217.0
-595,SSD,South Sudan,Number of Refugees from each Country to USA,27.0
-596,CHE,Switzerland,Number of Refugees from each Country to USA,18.0
-597,SMR,San Marino,Number of Refugees from each Country to USA,3.0
-598,GAB,Gabon,Number of Refugees from each Country to USA,468.0
-599,DEU,Germany,Number of Refugees from each Country to USA,570.0
-600,GRC,Greece,Number of Refugees from each Country to USA,257.0
-601,NOR,Norway,Number of Refugees from each Country to USA,10.0
-602,NER,Niger,Number of Refugees from each Country to USA,2138.0
-603,SEN,Senegal,Number of Refugees from each Country to USA,3481.0
-604,ALB,Albania,Number of Refugees from each Country to USA,41333.0
-605,DZA,Algeria,Number of Refugees from each Country to USA,2509.0
-606,MLT,Malta,Number of Refugees from each Country to USA,23.0
-607,MLI,Mali,Number of Refugees from each Country to USA,9225.0
-608,MDG,Madagascar,Number of Refugees from each Country to USA,172.0
-609,MYS,Malaysia,Number of Refugees from each Country to USA,1353.0
-610,MDV,Maldives,Number of Refugees from each Country to USA,62.0
-611,MAR,Morocco,Number of Refugees from each Country to USA,1114.0
-612,MEX,Mexico,Number of Refugees from each Country to USA,33563.0
-613,NAM,Namibia,Number of Refugees from each Country to USA,315.0
-614,MNG,Mongolia,Number of Refugees from each Country to USA,7506.0
-615,MMR,Myanmar,Number of Refugees from each Country to USA,30894.0
-616,PRK,North Korea,Number of Refugees from each Country to USA,210.0
-617,NPL,Nepal,Number of Refugees from each Country to USA,51312.0
-618,OMN,Oman,Number of Refugees from each Country to USA,24.0
-619,NRU,Nauru,Number of Refugees from each Country to USA,3.0
-620,NLD,Netherlands,Number of Refugees from each Country to USA,97.0
-621,NGA,Nigeria,Number of Refugees from each Country to USA,8527.0
-622,NZL,New Zealand,Number of Refugees from each Country to USA,7.0
-623,NIC,Nicaragua,Number of Refugees from each Country to USA,4325.0
-624,POL,Poland,Number of Refugees from each Country to USA,493.0
-625,PNG,Papua New Guinea,Number of Refugees from each Country to USA,8.0
-626,SYR,Syria,Number of Refugees from each Country to USA,30700.0
-627,SDN,Sudan,Number of Refugees from each Country to USA,18701.0
-628,LKA,Sri Lanka,Number of Refugees from each Country to USA,13715.0
-629,TZA,United Republic of Tanzania,Number of Refugees from each Country to USA,1549.0
-630,BLZ,Belize,Number of Refugees from each Country to USA,277.0
-631,BGD,Bangladesh,Number of Refugees from each Country to USA,12841.0
-632,BEL,Belgium,Number of Refugees from each Country to USA,337.0
-633,BHS,The Bahamas,Number of Refugees from each Country to USA,1300.0
-634,DOM,Dominican Republic,Number of Refugees from each Country to USA,830.0
-635,MHL,Marshall Islands,Number of Refugees from each Country to USA,21.0
-636,VCT,Saint Vincent and the Grenadines,Number of Refugees from each Country to USA,118.0
-637,SVN,Slovenia,Number of Refugees from each Country to USA,81.0
-638,MOZ,Mozambique,Number of Refugees from each Country to USA,9.0
-639,SVK,Slovakia,Number of Refugees from each Country to USA,201.0
-640,SOM,Somalia,Number of Refugees from each Country to USA,38689.0
-641,AUS,Australia,Number of Refugees from each Country to USA,9.0
-642,AGO,Angola,Number of Refugees from each Country to USA,1663.0
-643,BOL,Bolivia,Number of Refugees from each Country to USA,1106.0
-644,BWA,Botswana,Number of Refugees from each Country to USA,37.0
-645,BGR,Bulgaria,Number of Refugees from each Country to USA,7442.0
-646,BRA,Brazil,Number of Refugees from each Country to USA,6231.0
-647,BFA,Burkina Faso,Number of Refugees from each Country to USA,6359.0
-648,CMR,Cameroon,Number of Refugees from each Country to USA,59294.0
-649,SGP,Singapore,Number of Refugees from each Country to USA,257.0
-650,SLE,Sierra Leone,Number of Refugees from each Country to USA,11434.0
-651,ZAF,South Africa,Number of Refugees from each Country to USA,839.0
-652,TUR,Turkey,Number of Refugees from each Country to USA,4898.0
-653,TUN,Tunisia,Number of Refugees from each Country to USA,421.0
-654,GBR,United Kingdom,Number of Refugees from each Country to USA,580.0
-655,ARE,United Arab Emirates,Number of Refugees from each Country to USA,313.0
-656,URY,Uruguay,Number of Refugees from each Country to USA,116.0
-657,ZMB,Zambia,Number of Refugees from each Country to USA,806.0
-658,DMA,Dominica,Number of Refugees from each Country to USA,95.0
-659,LCA,Saint Lucia,Number of Refugees from each Country to USA,78.0
-660,GEO,Georgia,Number of Refugees from each Country to USA,6903.0
-661,GIN,Guinea,Number of Refugees from each Country to USA,32240.0
-662,GHA,Ghana,Number of Refugees from each Country to USA,2432.0
-663,IRQ,Iraq,Number of Refugees from each Country to USA,53648.0
-664,IRL,Ireland,Number of Refugees from each Country to USA,7.0
-665,HND,Honduras,Number of Refugees from each Country to USA,31649.0
-666,IND,India,Number of Refugees from each Country to USA,60894.0
-667,KNA,Saint Kitts and Nevis,Number of Refugees from each Country to USA,24.0
-668,LVA,Latvia,Number of Refugees from each Country to USA,849.0
-669,HRV,Croatia,Number of Refugees from each Country to USA,719.0
-670,ATG,Antigua and Barbuda,Number of Refugees from each Country to USA,19.0
-671,AND,Andorra,Number of Refugees from each Country to USA,38.0
-672,AFG,Afghanistan,Number of Refugees from each Country to USA,13969.0
-673,AZE,Azerbaijan,Number of Refugees from each Country to USA,7463.0
-674,BLR,Belarus,Number of Refugees from each Country to USA,17797.0
-675,BEN,Benin,Number of Refugees from each Country to USA,713.0
-676,KHM,Cambodia,Number of Refugees from each Country to USA,3489.0
-677,BIH,Bosnia and Herzegovina,Number of Refugees from each Country to USA,2044.0
-678,CHN,China,Number of Refugees from each Country to USA,630855.0
-679,CAN,Canada,Number of Refugees from each Country to USA,459.0
-680,CAF,Central African Republic,Number of Refugees from each Country to USA,2156.0
-681,CHL,Chile,Number of Refugees from each Country to USA,573.0
-682,COL,Colombia,Number of Refugees from each Country to USA,161402.0
-683,TCD,Chad,Number of Refugees from each Country to USA,3864.0
-684,CUB,Cuba,Number of Refugees from each Country to USA,7336.0
-685,DNK,Denmark,Number of Refugees from each Country to USA,8.0
-686,FIN,Finland,Number of Refugees from each Country to USA,44.0
-687,ETH,Ethiopia,Number of Refugees from each Country to USA,109439.0
-688,FJI,Fiji,Number of Refugees from each Country to USA,6869.0
-689,ECU,Ecuador,Number of Refugees from each Country to USA,3590.0
-690,ERI,Eritrea,Number of Refugees from each Country to USA,35913.0
-691,EGY,Egypt,Number of Refugees from each Country to USA,77652.0
-692,FRA,France,Number of Refugees from each Country to USA,331.0
-693,EST,Estonia,Number of Refugees from each Country to USA,2174.0
-694,GNB,Guinea Bissau,Number of Refugees from each Country to USA,328.0
-695,IDN,Indonesia,Number of Refugees from each Country to USA,44717.0
-696,GUY,Guyana,Number of Refugees from each Country to USA,1171.0
-697,HUN,Hungary,Number of Refugees from each Country to USA,264.0
-698,ISL,Iceland,Number of Refugees from each Country to USA,16.0
-699,KEN,Kenya,Number of Refugees from each Country to USA,23118.0
-700,ITA,Italy,Number of Refugees from each Country to USA,209.0
-701,KAZ,Kazakhstan,Number of Refugees from each Country to USA,5669.0
-702,JPN,Japan,Number of Refugees from each Country to USA,99.0
-703,LTU,Lithuania,Number of Refugees from each Country to USA,672.0
-704,LBY,Libya,Number of Refugees from each Country to USA,1471.0
-705,MDA,Moldova,Number of Refugees from each Country to USA,8917.0
-706,COM,Comoros,Number of Refugees from each Country to USA,57.0
-707,GRD,Grenada,Number of Refugees from each Country to USA,178.0
-708,BRN,Brunei,Number of Refugees from each Country to USA,0.0
-709,BDI,Burundi,Number of Refugees from each Country to USA,5526.0
-710,BTN,Bhutan,Number of Refugees from each Country to USA,708.0
-711,ARM,Armenia,Number of Refugees from each Country to USA,43432.0
-712,DJI,Djibouti,Number of Refugees from each Country to USA,1269.0
-713,GNQ,Equatorial Guinea,Number of Refugees from each Country to USA,92.0
-714,CPV,Cape Verde,Number of Refugees from each Country to USA,0.0
-715,CYP,Cyprus,Number of Refugees from each Country to USA,17.0
-716,PLW,Palau,Number of Refugees from each Country to USA,0.0
-717,SLV,El Salvador,Number of Refugees from each Country to USA,80259.0
-718,GMB,Gambia,Number of Refugees from each Country to USA,10765.0
-719,GTM,Guatemala,Number of Refugees from each Country to USA,70868.0
-720,HTI,Haiti,Number of Refugees from each Country to USA,213365.0
-721,JOR,Jordan,Number of Refugees from each Country to USA,4103.0
-722,ISR,Israel,Number of Refugees from each Country to USA,1670.0
-723,KWT,Kuwait,Number of Refugees from each Country to USA,913.0
-724,FSM,Federated States of Micronesia,Number of Refugees from each Country to USA,0.0
-725,JAM,Jamaica,Number of Refugees from each Country to USA,3684.0
-726,TTO,Trinidad and Tobago,Number of Refugees from each Country to USA,569.0
-727,LBN,Lebanon,Number of Refugees from each Country to USA,5127.0
-728,QAT,Qatar,Number of Refugees from each Country to USA,88.0
-729,LSO,Lesotho,Number of Refugees from each Country to USA,30.0
-730,MKD,Macedonia,Number of Refugees from each Country to USA,1896.0
-731,MNE,Montenegro,Number of Refugees from each Country to USA,758.0
-732,RWA,Rwanda,Number of Refugees from each Country to USA,9684.0
-733,TON,Tonga,Number of Refugees from each Country to USA,7.0
-734,SYC,Seychelles,Number of Refugees from each Country to USA,186.0
-735,TGO,Togo,Number of Refugees from each Country to USA,16589.0
+19,TUV,Tuvalu,Political Freedoms Index,94.0
+20,UGA,Uganda,Political Freedoms Index,35.0
+21,VUT,Vanuatu,Political Freedoms Index,80.0
+22,UKR,Ukraine,Political Freedoms Index,61.0
+23,TKM,Turkmenistan,Political Freedoms Index,4.0
+24,UZB,Uzbekistan,Political Freedoms Index,3.0
+25,PAK,Pakistan,Political Freedoms Index,43.0
+26,SRB,Republic of Serbia,Political Freedoms Index,76.0
+27,SRB,Republic of Serbia,Political Freedoms Index,76.0
+28,SLB,Solomon Islands,Political Freedoms Index,71.0
+29,ESP,Spain,Political Freedoms Index,94.0
+30,SUR,Suriname,Political Freedoms Index,77.0
+31,KOR,South Korea,Political Freedoms Index,82.0
+32,IRN,Iran,Political Freedoms Index,17.0
+33,AUT,Austria,Political Freedoms Index,95.0
+34,LIE,Liechtenstein,Political Freedoms Index,91.0
+35,LAO,Laos,Political Freedoms Index,12.0
+36,LBR,Liberia,Political Freedoms Index,62.0
+37,KGZ,Kyrgyzstan,Political Freedoms Index,37.0
+38,MWI,Malawi,Political Freedoms Index,63.0
+39,SWZ,Swaziland,Political Freedoms Index,18.0
+40,SWZ,Swaziland,Political Freedoms Index,18.0
+41,PAN,Panama,Political Freedoms Index,83.0
+42,PRY,Paraguay,Political Freedoms Index,64.0
+43,PHL,Philippines,Political Freedoms Index,63.0
+44,RUS,Russia,Political Freedoms Index,20.0
+45,SAU,Saudi Arabia,Political Freedoms Index,10.0
+46,ROU,Romania,Political Freedoms Index,84.0
+47,PRT,Portugal,Political Freedoms Index,97.0
+48,PER,Peru,Political Freedoms Index,72.0
+49,SSD,South Sudan,Political Freedoms Index,4.0
+50,CHE,Switzerland,Political Freedoms Index,96.0
+51,SMR,San Marino,Political Freedoms Index,97.0
+52,GAB,Gabon,Political Freedoms Index,32.0
+53,DEU,Germany,Political Freedoms Index,95.0
+54,GRC,Greece,Political Freedoms Index,84.0
+55,NOR,Norway,Political Freedoms Index,100.0
+56,NER,Niger,Political Freedoms Index,49.0
+57,SEN,Senegal,Political Freedoms Index,78.0
+58,ALB,Albania,Political Freedoms Index,68.0
+59,DZA,Algeria,Political Freedoms Index,35.0
+60,MLT,Malta,Political Freedoms Index,96.0
+61,MLI,Mali,Political Freedoms Index,45.0
+62,MDG,Madagascar,Political Freedoms Index,56.0
+63,MYS,Malaysia,Political Freedoms Index,44.0
+64,MDV,Maldives,Political Freedoms Index,40.0
+65,MAR,Morocco,Political Freedoms Index,41.0
+66,MEX,Mexico,Political Freedoms Index,65.0
+67,NAM,Namibia,Political Freedoms Index,77.0
+68,MNG,Mongolia,Political Freedoms Index,85.0
+69,MMR,Myanmar,Political Freedoms Index,32.0
+70,PRK,North Korea,Political Freedoms Index,3.0
+71,NPL,Nepal,Political Freedoms Index,52.0
+72,OMN,Oman,Political Freedoms Index,25.0
+73,NLD,Netherlands,Political Freedoms Index,99.0
+74,NGA,Nigeria,Political Freedoms Index,50.0
+75,NZL,New Zealand,Political Freedoms Index,98.0
+76,NIC,Nicaragua,Political Freedoms Index,47.0
+77,POL,Poland,Political Freedoms Index,89.0
+78,PNG,Papua New Guinea,Political Freedoms Index,64.0
+79,SYR,Syria,Political Freedoms Index,-1.0
+80,SDN,Sudan,Political Freedoms Index,6.0
+81,LKA,Sri Lanka,Political Freedoms Index,56.0
+82,TZA,United Republic of Tanzania,Political Freedoms Index,58.0
+83,BLZ,Belize,Political Freedoms Index,87.0
+84,BGD,Bangladesh,Political Freedoms Index,47.0
+85,BEL,Belgium,Political Freedoms Index,95.0
+86,BHS,The Bahamas,Political Freedoms Index,91.0
+87,DOM,Dominican Republic,Political Freedoms Index,68.0
+88,MHL,Marshall Islands,Political Freedoms Index,92.0
+89,VCT,Saint Vincent and the Grenadines,Political Freedoms Index,91.0
+90,SVN,Slovenia,Political Freedoms Index,92.0
+91,MOZ,Mozambique,Political Freedoms Index,53.0
+92,SVK,Slovakia,Political Freedoms Index,89.0
+93,SOM,Somalia,Political Freedoms Index,5.0
+94,SOM,Somalia,Political Freedoms Index,5.0
+95,AUS,Australia,Political Freedoms Index,98.0
+96,AGO,Angola,Political Freedoms Index,24.0
+97,BOL,Bolivia,Political Freedoms Index,68.0
+98,BWA,Botswana,Political Freedoms Index,72.0
+99,BGR,Bulgaria,Political Freedoms Index,80.0
+100,BRA,Brazil,Political Freedoms Index,79.0
+101,BFA,Burkina Faso,Political Freedoms Index,63.0
+102,CMR,Cameroon,Political Freedoms Index,24.0
+103,SGP,Singapore,Political Freedoms Index,51.0
+104,SLE,Sierra Leone,Political Freedoms Index,66.0
+105,ZAF,South Africa,Political Freedoms Index,78.0
+106,TUR,Turkey,Political Freedoms Index,38.0
+107,TUN,Tunisia,Political Freedoms Index,78.0
+108,GBR,United Kingdom,Political Freedoms Index,95.0
+109,ARE,United Arab Emirates,Political Freedoms Index,20.0
+110,URY,Uruguay,Political Freedoms Index,98.0
+111,USA,United States of America,Political Freedoms Index,89.0
+112,ZMB,Zambia,Political Freedoms Index,56.0
+113,DMA,Dominica,Political Freedoms Index,95.0
+114,LCA,Saint Lucia,Political Freedoms Index,92.0
+115,GEO,Georgia,Political Freedoms Index,64.0
+116,GIN,Guinea,Political Freedoms Index,41.0
+117,GHA,Ghana,Political Freedoms Index,83.0
+118,IRQ,Iraq,Political Freedoms Index,27.0
+119,IRL,Ireland,Political Freedoms Index,96.0
+120,HND,Honduras,Political Freedoms Index,46.0
+121,IND,India,Political Freedoms Index,77.0
+122,KNA,Saint Kitts and Nevis,Political Freedoms Index,89.0
+123,KIR,Kiribati,Political Freedoms Index,92.0
+124,LVA,Latvia,Political Freedoms Index,87.0
+125,HRV,Croatia,Political Freedoms Index,87.0
+126,ATG,Antigua and Barbuda,Political Freedoms Index,83.0
+127,AND,Andorra,Political Freedoms Index,95.0
+128,AFG,Afghanistan,Political Freedoms Index,24.0
+129,AZE,Azerbaijan,Political Freedoms Index,14.0
+130,BLR,Belarus,Political Freedoms Index,20.0
+131,BEN,Benin,Political Freedoms Index,82.0
+132,KHM,Cambodia,Political Freedoms Index,31.0
+133,BIH,Bosnia and Herzegovina,Political Freedoms Index,55.0
+134,CHN,China,Political Freedoms Index,15.0
+135,CAN,Canada,Political Freedoms Index,99.0
+136,CAF,Central African Republic,Political Freedoms Index,10.0
+137,CHL,Chile,Political Freedoms Index,94.0
+138,COL,Colombia,Political Freedoms Index,64.0
+139,TCD,Chad,Political Freedoms Index,18.0
+140,CUB,Cuba,Political Freedoms Index,15.0
+141,DNK,Denmark,Political Freedoms Index,97.0
+142,FIN,Finland,Political Freedoms Index,100.0
+143,ETH,Ethiopia,Political Freedoms Index,12.0
+144,FJI,Fiji,Political Freedoms Index,59.0
+145,ECU,Ecuador,Political Freedoms Index,57.0
+146,ERI,Eritrea,Political Freedoms Index,3.0
+147,EGY,Egypt,Political Freedoms Index,26.0
+148,FRA,France,Political Freedoms Index,90.0
+149,EST,Estonia,Political Freedoms Index,94.0
+150,GNB,Guinea Bissau,Political Freedoms Index,40.0
+151,IDN,Indonesia,Political Freedoms Index,65.0
+152,GUY,Guyana,Political Freedoms Index,74.0
+153,HUN,Hungary,Political Freedoms Index,76.0
+154,ISL,Iceland,Political Freedoms Index,97.0
+155,KEN,Kenya,Political Freedoms Index,51.0
+156,ITA,Italy,Political Freedoms Index,89.0
+157,KAZ,Kazakhstan,Political Freedoms Index,22.0
+158,JPN,Japan,Political Freedoms Index,96.0
+159,LTU,Lithuania,Political Freedoms Index,91.0
+160,LBY,Libya,Political Freedoms Index,13.0
+161,MDA,Moldova,Political Freedoms Index,62.0
+162,COM,Comoros,Political Freedoms Index,55.0
+163,GRD,Grenada,Political Freedoms Index,89.0
+164,BRN,Brunei,Political Freedoms Index,29.0
+165,BDI,Burundi,Political Freedoms Index,19.0
+166,BTN,Bhutan,Political Freedoms Index,55.0
+167,ARM,Armenia,Political Freedoms Index,45.0
+168,DJI,Djibouti,Political Freedoms Index,26.0
+169,GNQ,Equatorial Guinea,Political Freedoms Index,8.0
+170,CPV,Cape Verde,Political Freedoms Index,90.0
+171,CYP,Cyprus,Political Freedoms Index,94.0
+172,PLW,Palau,Political Freedoms Index,92.0
+173,SLV,El Salvador,Political Freedoms Index,70.0
+174,GMB,Gambia,Political Freedoms Index,20.0
+175,GTM,Guatemala,Political Freedoms Index,54.0
+176,HTI,Haiti,Political Freedoms Index,39.0
+177,JOR,Jordan,Political Freedoms Index,37.0
+178,ISR,Israel,Political Freedoms Index,80.0
+179,KWT,Kuwait,Political Freedoms Index,36.0
+180,FSM,Federated States of Micronesia,Political Freedoms Index,93.0
+181,JAM,Jamaica,Political Freedoms Index,75.0
+182,LUX,Luxembourg,Political Freedoms Index,98.0
+183,TTO,Trinidad and Tobago,Political Freedoms Index,81.0
+184,TLS,Timor-Leste,Political Freedoms Index,65.0
+185,LBN,Lebanon,Political Freedoms Index,44.0
+186,QAT,Qatar,Political Freedoms Index,26.0
+187,LSO,Lesotho,Political Freedoms Index,64.0
+188,WSM,Samoa,Political Freedoms Index,80.0
+189,MKD,Macedonia,Political Freedoms Index,57.0
+190,MNE,Montenegro,Political Freedoms Index,69.0
+191,RWA,Rwanda,Political Freedoms Index,24.0
+192,TON,Tonga,Political Freedoms Index,74.0
+193,SYC,Seychelles,Political Freedoms Index,71.0
+194,TGO,Togo,Political Freedoms Index,48.0
+195,THA,Thailand,GDP,401399422442.967
+196,TJK,Tajikistan,GDP,7853450374.0001
+197,ARG,Argentina,GDP,594749285413.212
+198,MRT,Mauritania,GDP,4844223106.95469
+199,MCO,Monaco,GDP,
+200,ZWE,Zimbabwe,GDP,16304667800.0
+201,YEM,Yemen,GDP,34602480338.778
+202,BHR,Bahrain,GDP,31125851063.8298
+203,VNM,Vietnam,GDP,193241108709.536
+204,VEN,Venezuela,GDP,
+205,CRI,Costa Rica,GDP,54775972988.7322
+206,COD,Democratic Republic of the Congo,GDP,37917704900.1192
+207,COG,Republic of Congo,GDP,8553154580.39951
+208,CZE,Czech Republic,GDP,186829940545.759
+209,CIV,Ivory Coast,GDP,33145096414.0731
+210,BRB,Barbados,GDP,4584150000.0
+211,STP,Sao Tome and Principe,GDP,315520894.931242
+212,SWE,Sweden,GDP,497918109302.399
+213,MUS,Mauritius,GDP,11692287066.381
+214,TUV,Tuvalu,GDP,35556038.8176495
+215,UGA,Uganda,GDP,27102650471.5604
+216,VUT,Vanuatu,GDP,737917151.424178
+217,UKR,Ukraine,GDP,91030959454.6961
+218,TKM,Turkmenistan,GDP,35799628571.4286
+219,UZB,Uzbekistan,GDP,66903804142.5395
+220,PAK,Pakistan,GDP,270556126820.064
+221,SRB,Republic of Serbia,GDP,37160332465.1645
+222,SRB,Republic of Serbia,GDP,37160332465.1645
+223,SLB,Solomon Islands,GDP,1154650066.30195
+224,ESP,Spain,GDP,1197789902774.43
+225,SUR,Suriname,GDP,4826587057.68724
+226,KOR,South Korea,GDP,1382764027113.82
+227,IRN,Iran,GDP,385874474398.59
+228,AUT,Austria,GDP,382065930307.978
+229,LIE,Liechtenstein,GDP,6289165409.55908
+230,LAO,Laos,GDP,14390391264.2607
+231,LBR,Liberia,GDP,2034000000.0
+232,KGZ,Kyrgyzstan,GDP,6678178340.45121
+233,MWI,Malawi,GDP,6373201160.03248
+234,SWZ,Swaziland,GDP,4020275298.02726
+235,SWZ,Swaziland,GDP,
+236,PAN,Panama,GDP,54315722500.0
+237,PRY,Paraguay,GDP,27282581335.7964
+238,PHL,Philippines,GDP,292774099014.19
+239,RUS,Russia,GDP,1368400705491.02
+240,SAU,Saudi Arabia,GDP,654269902888.715
+241,ROU,Romania,GDP,177911101680.106
+242,PRT,Portugal,GDP,199420256049.689
+243,PER,Peru,GDP,189926516769.25
+244,SSD,South Sudan,GDP,10906867789.8878
+245,CHE,Switzerland,GDP,679289166858.236
+246,SMR,San Marino,GDP,1569258068.0936
+247,GAB,Gabon,GDP,14377389785.603
+248,DEU,Germany,GDP,3375611100742.22
+249,GRC,Greece,GDP,195541761243.144
+250,NOR,Norway,GDP,386663139402.707
+251,NER,Niger,GDP,7251323996.0562
+252,SEN,Senegal,GDP,13640668374.1652
+253,ALB,Albania,GDP,11386931489.7968
+254,DZA,Algeria,GDP,165874330876.321
+255,MLT,Malta,GDP,10574026838.1945
+256,MLI,Mali,GDP,13100058099.804
+257,MDG,Madagascar,GDP,9744243531.20119
+258,MYS,Malaysia,GDP,296434003328.639
+259,MDV,Maldives,GDP,4006531188.37977
+260,MAR,Morocco,GDP,100593283696.732
+261,MEX,Mexico,GDP,1169622672463.29
+262,NAM,Namibia,GDP,11769045771.9709
+263,MNG,Mongolia,GDP,11749620619.5962
+264,MMR,Myanmar,GDP,59687373958.2574
+265,PRK,North Korea,GDP,
+266,NPL,Nepal,GDP,21410840908.5198
+267,OMN,Oman,GDP,68905071521.4564
+268,NLD,Netherlands,GDP,757999453314.269
+269,NGA,Nigeria,GDP,481066152888.967
+270,NZL,New Zealand,GDP,177620948761.31
+271,NIC,Nicaragua,GDP,12611087031.4931
+272,POL,Poland,GDP,477355617455.896
+273,PNG,Papua New Guinea,GDP,20638636035.255
+274,SYR,Syria,GDP,
+275,SDN,Sudan,GDP,97156119150.0
+276,LKA,Sri Lanka,GDP,80554807486.3911
+277,TZA,United Republic of Tanzania,GDP,45623490991.5407
+278,BLZ,Belize,GDP,1778567600.0
+279,BGD,Bangladesh,GDP,195078665827.565
+280,BEL,Belgium,GDP,455039563132.776
+281,BHS,The Bahamas,GDP,11792300000.0
+282,DOM,Dominican Republic,GDP,68802092020.9448
+283,MHL,Marshall Islands,GDP,179697900.0
+284,VCT,Saint Vincent and the Grenadines,GDP,756666666.666667
+285,SVN,Slovenia,GDP,43072415017.4321
+286,MOZ,Mozambique,GDP,14798399862.4398
+287,SVK,Slovakia,GDP,87501423882.4686
+288,SOM,Somalia,GDP,6631336625.14941
+289,SOM,Somalia,GDP,6631336625.14941
+290,AUS,Australia,GDP,1349034029453.37
+291,AGO,Angola,GDP,102621215573.456
+292,BOL,Bolivia,GDP,33000198263.3864
+293,BWA,Botswana,GDP,14420551446.4623
+294,BGR,Bulgaria,GDP,50199104511.4487
+295,BRA,Brazil,GDP,1802214373741.32
+296,BFA,Burkina Faso,GDP,10419303761.3524
+297,CMR,Cameroon,GDP,30916218544.4404
+298,SGP,Singapore,GDP,304097759674.134
+299,SLE,Sierra Leone,GDP,4218723875.13704
+300,ZAF,South Africa,GDP,317741039197.848
+301,TUR,Turkey,GDP,859796872794.118
+302,TUN,Tunisia,GDP,43156708809.1354
+303,GBR,United Kingdom,GDP,2885570309160.86
+304,ARE,United Arab Emirates,GDP,358135057862.492
+305,URY,Uruguay,GDP,53274304222.136
+306,USA,United States of America,GDP,18120714000000.0
+307,ZMB,Zambia,GDP,21154394545.895
+308,DMA,Dominica,GDP,535095851.851852
+309,LCA,Saint Lucia,GDP,1649142629.62963
+310,GEO,Georgia,GDP,13993546732.4726
+311,GIN,Guinea,GDP,8857789705.63763
+312,GHA,Ghana,GDP,37338430643.4024
+313,IRQ,Iraq,GDP,179640210726.448
+314,IRL,Ireland,GDP,290617008367.572
+315,HND,Honduras,GDP,20979767785.2104
+316,IND,India,GDP,2102390808997.09
+317,KNA,Saint Kitts and Nevis,GDP,878281518.518518
+318,KIR,Kiribati,GDP,169140560.438735
+319,LVA,Latvia,GDP,26972863393.6384
+320,HRV,Croatia,GDP,49425513611.2448
+321,ATG,Antigua and Barbuda,GDP,1364863037.03704
+322,AND,Andorra,GDP,2811489408.89431
+323,AFG,Afghanistan,GDP,19215562179.0117
+324,AZE,Azerbaijan,GDP,53074370486.0433
+325,BLR,Belarus,GDP,56454734396.5842
+326,BEN,Benin,GDP,8291155880.59505
+327,KHM,Cambodia,GDP,18049954289.4229
+328,BIH,Bosnia and Herzegovina,GDP,16209702863.6235
+329,CHN,China,GDP,11064666282625.5
+330,CAN,Canada,GDP,1559623393038.66
+331,CAF,Central African Republic,GDP,1583776805.96568
+332,CHL,Chile,GDP,243999477737.94
+333,COL,Colombia,GDP,291519591532.951
+334,TCD,Chad,GDP,10985793715.2707
+335,CUB,Cuba,GDP,87132800000.0
+336,DNK,Denmark,GDP,301298464861.385
+337,FIN,Finland,GDP,232464833065.554
+338,ETH,Ethiopia,GDP,64464547915.2698
+339,FJI,Fiji,GDP,4362128146.45309
+340,ECU,Ecuador,GDP,99290381000.0
+341,ERI,Eritrea,GDP,
+342,EGY,Egypt,GDP,332698041030.807
+343,FRA,France,GDP,2438207896251.84
+344,EST,Estonia,GDP,22566956982.229
+345,GNB,Guinea Bissau,GDP,1047808174.95585
+346,IDN,Indonesia,GDP,860854235065.079
+347,GUY,Guyana,GDP,3166029055.69007
+348,HUN,Hungary,GDP,122879042001.915
+349,ISL,Iceland,GDP,16942247373.9704
+350,KEN,Kenya,GDP,64007293814.8755
+351,ITA,Italy,GDP,1832868490534.11
+352,KAZ,Kazakhstan,GDP,184388432148.715
+353,JPN,Japan,GDP,4394977752877.82
+354,LTU,Lithuania,GDP,41508609232.7778
+355,LBY,Libya,GDP,29274816453.7864
+356,MDA,Moldova,GDP,6512899540.34594
+357,COM,Comoros,GDP,565689764.632629
+358,GRD,Grenada,GDP,997007925.925926
+359,BRN,Brunei,GDP,12930394937.8137
+360,BDI,Burundi,GDP,3066681386.75112
+361,BTN,Bhutan,GDP,2059258652.94668
+362,ARM,Armenia,GDP,10553337672.9872
+363,DJI,Djibouti,GDP,1633741922.68737
+364,GNQ,Equatorial Guinea,GDP,13180194732.94
+365,CPV,Cape Verde,GDP,1596154666.48019
+366,CYP,Cyprus,GDP,19676167239.6584
+367,PLW,Palau,GDP,293082900.0
+368,SLV,El Salvador,GDP,23166030400.0
+369,GMB,Gambia,GDP,907655651.525834
+370,GTM,Guatemala,GDP,63767597193.9175
+371,HTI,Haiti,GDP,8724656126.49849
+372,JOR,Jordan,GDP,37517410281.6901
+373,ISR,Israel,GDP,299093839689.55
+374,KWT,Kuwait,GDP,114567298105.683
+375,FSM,Federated States of Micronesia,GDP,315179700.0
+376,JAM,Jamaica,GDP,14186886642.6685
+377,LUX,Luxembourg,GDP,57784495265.4378
+378,TTO,Trinidad and Tobago,GDP,24402499451.187
+379,TLS,Timor-Leste,GDP,3104426020.56392
+380,LBN,Lebanon,GDP,49459296463.2836
+381,QAT,Qatar,GDP,164641483516.484
+382,LSO,Lesotho,GDP,2505879959.51217
+383,WSM,Samoa,GDP,803985809.166289
+384,MKD,Macedonia,GDP,10051659161.1733
+385,MNE,Montenegro,GDP,4052913385.82677
+386,RWA,Rwanda,GDP,8277613193.57631
+387,TON,Tonga,GDP,435438217.281663
+388,SYC,Seychelles,GDP,1375604279.45443
+389,TGO,Togo,GDP,4087775414.97626
+390,THA,Thailand,"Water Stress, All Sectors",1.698024036
+391,TJK,Tajikistan,"Water Stress, All Sectors",3.5280262
+392,ARG,Argentina,"Water Stress, All Sectors",2.513094514
+393,MRT,Mauritania,"Water Stress, All Sectors",0.604108712
+394,MCO,Monaco,"Water Stress, All Sectors",2.664468084
+395,ZWE,Zimbabwe,"Water Stress, All Sectors",0.64041833
+396,YEM,Yemen,"Water Stress, All Sectors",4.674046102
+397,BHR,Bahrain,"Water Stress, All Sectors",5.0
+398,VNM,Vietnam,"Water Stress, All Sectors",1.008669435
+399,VEN,Venezuela,"Water Stress, All Sectors",2.299918259
+400,CRI,Costa Rica,"Water Stress, All Sectors",1.941371802
+401,COD,Democratic Republic of the Congo,"Water Stress, All Sectors",0.006045932
+402,COG,Republic of Congo,"Water Stress, All Sectors",0.427577452
+403,CZE,Czech Republic,"Water Stress, All Sectors",1.134582989
+404,CIV,Ivory Coast,"Water Stress, All Sectors",0.044008016
+405,BRB,Barbados,"Water Stress, All Sectors",5.0
+406,STP,Sao Tome and Principe,"Water Stress, All Sectors",0.0
+407,SWE,Sweden,"Water Stress, All Sectors",1.304243204
+408,MUS,Mauritius,"Water Stress, All Sectors",0.0
+409,TUV,Tuvalu,"Water Stress, All Sectors",0.0
+410,UGA,Uganda,"Water Stress, All Sectors",0.000342989
+411,VUT,Vanuatu,"Water Stress, All Sectors",0.0
+412,UKR,Ukraine,"Water Stress, All Sectors",2.095905385
+413,TKM,Turkmenistan,"Water Stress, All Sectors",4.29960978
+414,UZB,Uzbekistan,"Water Stress, All Sectors",4.316671945
+415,PAK,Pakistan,"Water Stress, All Sectors",4.31002513
+416,SRB,Republic of Serbia,"Water Stress, All Sectors",1.288331317
+417,SRB,Republic of Serbia,"Water Stress, All Sectors",0.583519
+418,SLB,Solomon Islands,"Water Stress, All Sectors",0.0
+419,ESP,Spain,"Water Stress, All Sectors",3.725614481
+420,SUR,Suriname,"Water Stress, All Sectors",0.253345091
+421,KOR,South Korea,"Water Stress, All Sectors",3.543805295
+422,IRN,Iran,"Water Stress, All Sectors",4.781554087
+423,AUT,Austria,"Water Stress, All Sectors",0.322035824
+424,LIE,Liechtenstein,"Water Stress, All Sectors",0.462063009
+425,LAO,Laos,"Water Stress, All Sectors",0.014155122
+426,LBR,Liberia,"Water Stress, All Sectors",0.273278189
+427,KGZ,Kyrgyzstan,"Water Stress, All Sectors",4.821997893
+428,MWI,Malawi,"Water Stress, All Sectors",0.105264432
+429,SWZ,Swaziland,"Water Stress, All Sectors",3.105143962
+430,SWZ,Swaziland,"Water Stress, All Sectors",3.105143962
+431,PAN,Panama,"Water Stress, All Sectors",0.422002909
+432,PRY,Paraguay,"Water Stress, All Sectors",0.011150345
+433,PHL,Philippines,"Water Stress, All Sectors",3.333262336
+434,RUS,Russia,"Water Stress, All Sectors",1.234853329
+435,SAU,Saudi Arabia,"Water Stress, All Sectors",4.992350923
+436,ROU,Romania,"Water Stress, All Sectors",0.835612236
+437,PRT,Portugal,"Water Stress, All Sectors",3.338300161
+438,PER,Peru,"Water Stress, All Sectors",3.20160863
+439,SSD,South Sudan,"Water Stress, All Sectors",0.0
+440,CHE,Switzerland,"Water Stress, All Sectors",1.064087164
+441,SMR,San Marino,"Water Stress, All Sectors",5.0
+442,GAB,Gabon,"Water Stress, All Sectors",1.559075188
+443,DEU,Germany,"Water Stress, All Sectors",1.895268618
+444,GRC,Greece,"Water Stress, All Sectors",3.27257144
+445,NOR,Norway,"Water Stress, All Sectors",0.400524984
+446,NER,Niger,"Water Stress, All Sectors",0.112430873
+447,SEN,Senegal,"Water Stress, All Sectors",0.21481397
+448,ALB,Albania,"Water Stress, All Sectors",1.895065503
+449,DZA,Algeria,"Water Stress, All Sectors",3.444266526
+450,MLT,Malta,"Water Stress, All Sectors",5.0
+451,MLI,Mali,"Water Stress, All Sectors",0.204415117
+452,MDG,Madagascar,"Water Stress, All Sectors",1.247565555
+453,MYS,Malaysia,"Water Stress, All Sectors",2.087355521
+454,MDV,Maldives,"Water Stress, All Sectors",0.0
+455,MAR,Morocco,"Water Stress, All Sectors",4.23604685
+456,MEX,Mexico,"Water Stress, All Sectors",3.516053768
+457,NAM,Namibia,"Water Stress, All Sectors",1.882401311
+458,MNG,Mongolia,"Water Stress, All Sectors",4.046933749
+459,MMR,Myanmar,"Water Stress, All Sectors",0.303092379
+460,PRK,North Korea,"Water Stress, All Sectors",2.059944861
+461,NPL,Nepal,"Water Stress, All Sectors",2.402084479
+462,OMN,Oman,"Water Stress, All Sectors",4.913785867
+463,NLD,Netherlands,"Water Stress, All Sectors",1.728848212
+464,NGA,Nigeria,"Water Stress, All Sectors",0.293372329
+465,NZL,New Zealand,"Water Stress, All Sectors",1.351785653
+466,NIC,Nicaragua,"Water Stress, All Sectors",1.010015863
+467,POL,Poland,"Water Stress, All Sectors",1.307267036
+468,PNG,Papua New Guinea,"Water Stress, All Sectors",0.596268378
+469,SYR,Syria,"Water Stress, All Sectors",3.851932965
+470,SDN,Sudan,"Water Stress, All Sectors",0.912859496
+471,LKA,Sri Lanka,"Water Stress, All Sectors",3.007874921
+472,TZA,United Republic of Tanzania,"Water Stress, All Sectors",1.498342011
+473,BLZ,Belize,"Water Stress, All Sectors",1.347722344
+474,BGD,Bangladesh,"Water Stress, All Sectors",0.64753444
+475,BEL,Belgium,"Water Stress, All Sectors",3.164518106
+476,BHS,The Bahamas,"Water Stress, All Sectors",0.0
+477,DOM,Dominican Republic,"Water Stress, All Sectors",3.487299185
+478,MHL,Marshall Islands,"Water Stress, All Sectors",0.0
+479,VCT,Saint Vincent and the Grenadines,"Water Stress, All Sectors",5.0
+480,SVN,Slovenia,"Water Stress, All Sectors",0.027711066
+481,MOZ,Mozambique,"Water Stress, All Sectors",0.824086669
+482,SVK,Slovakia,"Water Stress, All Sectors",0.197465692
+483,SOM,Somalia,"Water Stress, All Sectors",4.379483052
+484,SOM,Somalia,"Water Stress, All Sectors",0.455283361
+485,AUS,Australia,"Water Stress, All Sectors",3.511488236
+486,AGO,Angola,"Water Stress, All Sectors",1.539987159
+487,BOL,Bolivia,"Water Stress, All Sectors",0.677154647
+488,BWA,Botswana,"Water Stress, All Sectors",1.362974038
+489,BGR,Bulgaria,"Water Stress, All Sectors",1.265797656
+490,BRA,Brazil,"Water Stress, All Sectors",0.914442268
+491,BFA,Burkina Faso,"Water Stress, All Sectors",4.45e-06
+492,CMR,Cameroon,"Water Stress, All Sectors",0.107044034
+493,SGP,Singapore,"Water Stress, All Sectors",5.0
+494,SLE,Sierra Leone,"Water Stress, All Sectors",0.508070552
+495,ZAF,South Africa,"Water Stress, All Sectors",3.040457185
+496,TUR,Turkey,"Water Stress, All Sectors",3.020969689
+497,TUN,Tunisia,"Water Stress, All Sectors",3.441952849
+498,GBR,United Kingdom,"Water Stress, All Sectors",2.628114968
+499,ARE,United Arab Emirates,"Water Stress, All Sectors",5.0
+500,URY,Uruguay,"Water Stress, All Sectors",0.863199369
+501,USA,United States of America,"Water Stress, All Sectors",2.888310471
+502,ZMB,Zambia,"Water Stress, All Sectors",0.07768468
+503,DMA,Dominica,"Water Stress, All Sectors",5.0
+504,LCA,Saint Lucia,"Water Stress, All Sectors",5.0
+505,GEO,Georgia,"Water Stress, All Sectors",1.511845034
+506,GIN,Guinea,"Water Stress, All Sectors",0.058241578
+507,GHA,Ghana,"Water Stress, All Sectors",0.108839883
+508,IRQ,Iraq,"Water Stress, All Sectors",3.483184717
+509,IRL,Ireland,"Water Stress, All Sectors",2.917039654
+510,HND,Honduras,"Water Stress, All Sectors",0.068147511
+511,IND,India,"Water Stress, All Sectors",3.584886835
+512,KNA,Saint Kitts and Nevis,"Water Stress, All Sectors",0.0
+513,KIR,Kiribati,"Water Stress, All Sectors",0.0
+514,LVA,Latvia,"Water Stress, All Sectors",0.351614149
+515,HRV,Croatia,"Water Stress, All Sectors",0.017393729
+516,ATG,Antigua and Barbuda,"Water Stress, All Sectors",5.0
+517,AND,Andorra,"Water Stress, All Sectors",3.326590774
+518,AFG,Afghanistan,"Water Stress, All Sectors",4.009097519
+519,AZE,Azerbaijan,"Water Stress, All Sectors",3.391520168
+520,BLR,Belarus,"Water Stress, All Sectors",0.591421484
+521,BEN,Benin,"Water Stress, All Sectors",0.0
+522,KHM,Cambodia,"Water Stress, All Sectors",0.44228084
+523,BIH,Bosnia and Herzegovina,"Water Stress, All Sectors",0.01993265
+524,CHN,China,"Water Stress, All Sectors",2.944768721
+525,CAN,Canada,"Water Stress, All Sectors",1.205766615
+526,CAF,Central African Republic,"Water Stress, All Sectors",0.0
+527,CHL,Chile,"Water Stress, All Sectors",3.205366192
+528,COL,Colombia,"Water Stress, All Sectors",0.327354232
+529,TCD,Chad,"Water Stress, All Sectors",0.522388601
+530,CUB,Cuba,"Water Stress, All Sectors",3.192193495
+531,DNK,Denmark,"Water Stress, All Sectors",0.95293102
+532,FIN,Finland,"Water Stress, All Sectors",0.982448977
+533,ETH,Ethiopia,"Water Stress, All Sectors",0.611776827
+534,FJI,Fiji,"Water Stress, All Sectors",0.0
+535,ECU,Ecuador,"Water Stress, All Sectors",1.860604233
+536,ERI,Eritrea,"Water Stress, All Sectors",3.018732069
+537,EGY,Egypt,"Water Stress, All Sectors",1.327987529
+538,FRA,France,"Water Stress, All Sectors",1.750634001
+539,EST,Estonia,"Water Stress, All Sectors",2.750275178
+540,GNB,Guinea Bissau,"Water Stress, All Sectors",0.166057843
+541,IDN,Indonesia,"Water Stress, All Sectors",3.264861142
+542,GUY,Guyana,"Water Stress, All Sectors",1.77932534
+543,HUN,Hungary,"Water Stress, All Sectors",0.49486483
+544,ISL,Iceland,"Water Stress, All Sectors",0.136669564
+545,KEN,Kenya,"Water Stress, All Sectors",0.682811601
+546,ITA,Italy,"Water Stress, All Sectors",3.350267831
+547,KAZ,Kazakhstan,"Water Stress, All Sectors",4.018548002
+548,JPN,Japan,"Water Stress, All Sectors",3.054321889
+549,LTU,Lithuania,"Water Stress, All Sectors",1.193841419
+550,LBY,Libya,"Water Stress, All Sectors",4.84021236
+551,MDA,Moldova,"Water Stress, All Sectors",1.462672144
+552,COM,Comoros,"Water Stress, All Sectors",5.0
+553,GRD,Grenada,"Water Stress, All Sectors",0.0
+554,BRN,Brunei,"Water Stress, All Sectors",0.008372069
+555,BDI,Burundi,"Water Stress, All Sectors",0.0
+556,BTN,Bhutan,"Water Stress, All Sectors",0.450201544
+557,ARM,Armenia,"Water Stress, All Sectors",3.067362647
+558,DJI,Djibouti,"Water Stress, All Sectors",3.390809163
+559,GNQ,Equatorial Guinea,"Water Stress, All Sectors",0.536396053
+560,CPV,Cape Verde,"Water Stress, All Sectors",0.0
+561,CYP,Cyprus,"Water Stress, All Sectors",5.0
+562,PLW,Palau,"Water Stress, All Sectors",0.0
+563,SLV,El Salvador,"Water Stress, All Sectors",1.494649349
+564,GMB,Gambia,"Water Stress, All Sectors",0.416833845
+565,GTM,Guatemala,"Water Stress, All Sectors",1.010346498
+566,HTI,Haiti,"Water Stress, All Sectors",2.375955
+567,JOR,Jordan,"Water Stress, All Sectors",4.594449768
+568,ISR,Israel,"Water Stress, All Sectors",4.825385575
+569,KWT,Kuwait,"Water Stress, All Sectors",4.964874491
+570,FSM,Federated States of Micronesia,"Water Stress, All Sectors",0.0
+571,JAM,Jamaica,"Water Stress, All Sectors",5.0
+572,LUX,Luxembourg,"Water Stress, All Sectors",2.508313934
+573,TTO,Trinidad and Tobago,"Water Stress, All Sectors",5.0
+574,TLS,Timor-Leste,"Water Stress, All Sectors",4.806092253
+575,LBN,Lebanon,"Water Stress, All Sectors",4.540996616
+576,QAT,Qatar,"Water Stress, All Sectors",5.0
+577,LSO,Lesotho,"Water Stress, All Sectors",3.972669119
+578,WSM,Samoa,"Water Stress, All Sectors",0.0
+579,MKD,Macedonia,"Water Stress, All Sectors",2.645752234
+580,MNE,Montenegro,"Water Stress, All Sectors",0.308810807
+581,RWA,Rwanda,"Water Stress, All Sectors",0.0
+582,TON,Tonga,"Water Stress, All Sectors",0.0
+583,SYC,Seychelles,"Water Stress, All Sectors",0.0
+584,TGO,Togo,"Water Stress, All Sectors",0.120468399
+585,THA,Thailand,Number of Refugees from each Country,154.0
+586,TJK,Tajikistan,Number of Refugees from each Country,1354.0
+587,ARG,Argentina,Number of Refugees from each Country,111.0
+588,MRT,Mauritania,Number of Refugees from each Country,36495.0
+589,MCO,Monaco,Number of Refugees from each Country,0.0
+590,ZWE,Zimbabwe,Number of Refugees from each Country,17390.0
+591,YEM,Yemen,Number of Refugees from each Country,23500.0
+592,BHR,Bahrain,Number of Refugees from each Country,487.0
+593,VNM,Vietnam,Number of Refugees from each Country,334044.0
+594,VEN,Venezuela,Number of Refugees from each Country,9247.0
+595,CRI,Costa Rica,Number of Refugees from each Country,190.0
+596,COD,Democratic Republic of the Congo,Number of Refugees from each Country,620775.0
+597,COG,Republic of Congo,Number of Refugees from each Country,13225.0
+598,CZE,Czech Republic,Number of Refugees from each Country,1272.0
+599,CIV,Ivory Coast,Number of Refugees from each Country,39939.0
+600,BRB,Barbados,Number of Refugees from each Country,167.0
+601,STP,Sao Tome and Principe,Number of Refugees from each Country,26.0
+602,SWE,Sweden,Number of Refugees from each Country,14.0
+603,MUS,Mauritius,Number of Refugees from each Country,125.0
+604,TUV,Tuvalu,Number of Refugees from each Country,0.0
+605,UGA,Uganda,Number of Refugees from each Country,6369.0
+606,VUT,Vanuatu,Number of Refugees from each Country,0.0
+607,UKR,Ukraine,Number of Refugees from each Country,139561.0
+608,TKM,Turkmenistan,Number of Refugees from each Country,340.0
+609,UZB,Uzbekistan,Number of Refugees from each Country,3380.0
+610,PAK,Pakistan,Number of Refugees from each Country,128886.0
+611,SRB,Republic of Serbia,Number of Refugees from each Country,35072.0
+612,SRB,Republic of Serbia,Number of Refugees from each Country,35072.0
+613,SLB,Solomon Islands,Number of Refugees from each Country,57.0
+614,ESP,Spain,Number of Refugees from each Country,34.0
+615,SUR,Suriname,Number of Refugees from each Country,17.0
+616,KOR,South Korea,Number of Refugees from each Country,234.0
+617,IRN,Iran,Number of Refugees from each Country,118595.0
+618,AUT,Austria,Number of Refugees from each Country,0.0
+619,LIE,Liechtenstein,Number of Refugees from each Country,0.0
+620,LAO,Laos,Number of Refugees from each Country,7051.0
+621,LBR,Liberia,Number of Refugees from each Country,5989.0
+622,KGZ,Kyrgyzstan,Number of Refugees from each Country,2756.0
+623,MWI,Malawi,Number of Refugees from each Country,419.0
+624,SWZ,Swaziland,Number of Refugees from each Country,221.0
+625,SWZ,Swaziland,Number of Refugees from each Country,221.0
+626,PAN,Panama,Number of Refugees from each Country,31.0
+627,PRY,Paraguay,Number of Refugees from each Country,62.0
+628,PHL,Philippines,Number of Refugees from each Country,433.0
+629,RUS,Russia,Number of Refugees from each Country,61569.0
+630,SAU,Saudi Arabia,Number of Refugees from each Country,1169.0
+631,ROU,Romania,Number of Refugees from each Country,1200.0
+632,PRT,Portugal,Number of Refugees from each Country,6.0
+633,PER,Peru,Number of Refugees from each Country,2578.0
+634,SSD,South Sudan,Number of Refugees from each Country,2439868.0
+635,CHE,Switzerland,Number of Refugees from each Country,0.0
+636,SMR,San Marino,Number of Refugees from each Country,0.0
+637,GAB,Gabon,Number of Refugees from each Country,211.0
+638,DEU,Germany,Number of Refugees from each Country,66.0
+639,GRC,Greece,Number of Refugees from each Country,101.0
+640,NOR,Norway,Number of Refugees from each Country,0.0
+641,NER,Niger,Number of Refugees from each Country,1343.0
+642,SEN,Senegal,Number of Refugees from each Country,26559.0
+643,ALB,Albania,Number of Refugees from each Country,12163.0
+644,DZA,Algeria,Number of Refugees from each Country,3991.0
+645,MLT,Malta,Number of Refugees from each Country,0.0
+646,MLI,Mali,Number of Refugees from each Country,150285.0
+647,MDG,Madagascar,Number of Refugees from each Country,277.0
+648,MYS,Malaysia,Number of Refugees from each Country,530.0
+649,MDV,Maldives,Number of Refugees from each Country,54.0
+650,MAR,Morocco,Number of Refugees from each Country,3064.0
+651,MEX,Mexico,Number of Refugees from each Country,11659.0
+652,NAM,Namibia,Number of Refugees from each Country,1358.0
+653,MNG,Mongolia,Number of Refugees from each Country,2207.0
+654,MMR,Myanmar,Number of Refugees from each Country,1156732.0
+655,PRK,North Korea,Number of Refugees from each Country,1161.0
+656,NPL,Nepal,Number of Refugees from each Country,8399.0
+657,OMN,Oman,Number of Refugees from each Country,29.0
+658,NLD,Netherlands,Number of Refugees from each Country,34.0
+659,NGA,Nigeria,Number of Refugees from each Country,238942.0
+660,NZL,New Zealand,Number of Refugees from each Country,34.0
+661,NIC,Nicaragua,Number of Refugees from each Country,1467.0
+662,POL,Poland,Number of Refugees from each Country,1108.0
+663,PNG,Papua New Guinea,Number of Refugees from each Country,396.0
+664,SYR,Syria,Number of Refugees from each Country,6308619.0
+665,SDN,Sudan,Number of Refugees from each Country,694506.0
+666,LKA,Sri Lanka,Number of Refugees from each Country,115612.0
+667,TZA,United Republic of Tanzania,Number of Refugees from each Country,630.0
+668,BLZ,Belize,Number of Refugees from each Country,59.0
+669,BGD,Bangladesh,Number of Refugees from each Country,16755.0
+670,BEL,Belgium,Number of Refugees from each Country,52.0
+671,BHS,The Bahamas,Number of Refugees from each Country,373.0
+672,DOM,Dominican Republic,Number of Refugees from each Country,412.0
+673,MHL,Marshall Islands,Number of Refugees from each Country,7.0
+674,VCT,Saint Vincent and the Grenadines,Number of Refugees from each Country,1301.0
+675,SVN,Slovenia,Number of Refugees from each Country,7.0
+676,MOZ,Mozambique,Number of Refugees from each Country,38.0
+677,SVK,Slovakia,Number of Refugees from each Country,913.0
+678,SOM,Somalia,Number of Refugees from each Country,986356.0
+679,SOM,Somalia,Number of Refugees from each Country,986356.0
+680,AUS,Australia,Number of Refugees from each Country,0.0
+681,AGO,Angola,Number of Refugees from each Country,8267.0
+682,BOL,Bolivia,Number of Refugees from each Country,505.0
+683,BWA,Botswana,Number of Refugees from each Country,279.0
+684,BGR,Bulgaria,Number of Refugees from each Country,716.0
+685,BRA,Brazil,Number of Refugees from each Country,836.0
+686,BFA,Burkina Faso,Number of Refugees from each Country,2679.0
+687,CMR,Cameroon,Number of Refugees from each Country,10982.0
+688,SGP,Singapore,Number of Refugees from each Country,43.0
+689,SLE,Sierra Leone,Number of Refugees from each Country,4436.0
+690,ZAF,South Africa,Number of Refugees from each Country,446.0
+691,TUR,Turkey,Number of Refugees from each Country,61338.0
+692,TUN,Tunisia,Number of Refugees from each Country,1806.0
+693,GBR,United Kingdom,Number of Refugees from each Country,85.0
+694,ARE,United Arab Emirates,Number of Refugees from each Country,132.0
+695,URY,Uruguay,Number of Refugees from each Country,7.0
+696,USA,United States of America,Number of Refugees from each Country,285.0
+697,ZMB,Zambia,Number of Refugees from each Country,250.0
+698,DMA,Dominica,Number of Refugees from each Country,26.0
+699,LCA,Saint Lucia,Number of Refugees from each Country,995.0
+700,GEO,Georgia,Number of Refugees from each Country,6485.0
+701,GIN,Guinea,Number of Refugees from each Country,20313.0
+702,GHA,Ghana,Number of Refugees from each Country,16929.0
+703,IRQ,Iraq,Number of Refugees from each Country,362506.0
+704,IRL,Ireland,Number of Refugees from each Country,0.0
+705,HND,Honduras,Number of Refugees from each Country,14404.0
+706,IND,India,Number of Refugees from each Country,7891.0
+707,KNA,Saint Kitts and Nevis,Number of Refugees from each Country,46.0
+708,KIR,Kiribati,Number of Refugees from each Country,0.0
+709,LVA,Latvia,Number of Refugees from each Country,157.0
+710,HRV,Croatia,Number of Refugees from each Country,24859.0
+711,ATG,Antigua and Barbuda,Number of Refugees from each Country,94.0
+712,AND,Andorra,Number of Refugees from each Country,0.0
+713,AFG,Afghanistan,Number of Refugees from each Country,2624225.0
+714,AZE,Azerbaijan,Number of Refugees from each Country,10878.0
+715,BLR,Belarus,Number of Refugees from each Country,3635.0
+716,BEN,Benin,Number of Refugees from each Country,557.0
+717,KHM,Cambodia,Number of Refugees from each Country,12213.0
+718,BIH,Bosnia and Herzegovina,Number of Refugees from each Country,17669.0
+719,CHN,China,Number of Refugees from each Country,207691.0
+720,CAN,Canada,Number of Refugees from each Country,75.0
+721,CAF,Central African Republic,Number of Refugees from each Country,545498.0
+722,CHL,Chile,Number of Refugees from each Country,483.0
+723,COL,Colombia,Number of Refugees from each Country,191607.0
+724,TCD,Chad,Number of Refugees from each Country,16295.0
+725,CUB,Cuba,Number of Refugees from each Country,5316.0
+726,DNK,Denmark,Number of Refugees from each Country,0.0
+727,FIN,Finland,Number of Refugees from each Country,0.0
+728,ETH,Ethiopia,Number of Refugees from each Country,87388.0
+729,FJI,Fiji,Number of Refugees from each Country,734.0
+730,ECU,Ecuador,Number of Refugees from each Country,1236.0
+731,ERI,Eritrea,Number of Refugees from each Country,486169.0
+732,EGY,Egypt,Number of Refugees from each Country,22056.0
+733,FRA,France,Number of Refugees from each Country,49.0
+734,EST,Estonia,Number of Refugees from each Country,278.0
+735,GNB,Guinea Bissau,Number of Refugees from each Country,1855.0
+736,IDN,Indonesia,Number of Refugees from each Country,12480.0
+737,GUY,Guyana,Number of Refugees from each Country,255.0
+738,HUN,Hungary,Number of Refugees from each Country,3331.0
+739,ISL,Iceland,Number of Refugees from each Country,0.0
+740,KEN,Kenya,Number of Refugees from each Country,7547.0
+741,ITA,Italy,Number of Refugees from each Country,47.0
+742,KAZ,Kazakhstan,Number of Refugees from each Country,2386.0
+743,JPN,Japan,Number of Refugees from each Country,44.0
+744,LTU,Lithuania,Number of Refugees from each Country,63.0
+745,LBY,Libya,Number of Refugees from each Country,11185.0
+746,MDA,Moldova,Number of Refugees from each Country,2314.0
+747,COM,Comoros,Number of Refugees from each Country,575.0
+748,GRD,Grenada,Number of Refugees from each Country,103.0
+749,BRN,Brunei,Number of Refugees from each Country,0.0
+750,BDI,Burundi,Number of Refugees from each Country,439280.0
+751,BTN,Bhutan,Number of Refugees from each Country,7929.0
+752,ARM,Armenia,Number of Refugees from each Country,10766.0
+753,DJI,Djibouti,Number of Refugees from each Country,1741.0
+754,GNQ,Equatorial Guinea,Number of Refugees from each Country,122.0
+755,CPV,Cape Verde,Number of Refugees from each Country,0.0
+756,CYP,Cyprus,Number of Refugees from each Country,0.0
+757,PLW,Palau,Number of Refugees from each Country,0.0
+758,SLV,El Salvador,Number of Refugees from each Country,25861.0
+759,GMB,Gambia,Number of Refugees from each Country,14539.0
+760,GTM,Guatemala,Number of Refugees from each Country,16274.0
+761,HTI,Haiti,Number of Refugees from each Country,28414.0
+762,JOR,Jordan,Number of Refugees from each Country,2099.0
+763,ISR,Israel,Number of Refugees from each Country,459.0
+764,KWT,Kuwait,Number of Refugees from each Country,1082.0
+765,FSM,Federated States of Micronesia,Number of Refugees from each Country,0.0
+766,JAM,Jamaica,Number of Refugees from each Country,2209.0
+767,LUX,Luxembourg,Number of Refugees from each Country,0.0
+768,TTO,Trinidad and Tobago,Number of Refugees from each Country,310.0
+769,TLS,Timor-Leste,Number of Refugees from each Country,8.0
+770,LBN,Lebanon,Number of Refugees from each Country,5287.0
+771,QAT,Qatar,Number of Refugees from each Country,31.0
+772,LSO,Lesotho,Number of Refugees from each Country,6.0
+773,WSM,Samoa,Number of Refugees from each Country,0.0
+774,MKD,Macedonia,Number of Refugees from each Country,1633.0
+775,MNE,Montenegro,Number of Refugees from each Country,699.0
+776,RWA,Rwanda,Number of Refugees from each Country,258956.0
+777,TON,Tonga,Number of Refugees from each Country,34.0
+778,SYC,Seychelles,Number of Refugees from each Country,5.0
+779,TGO,Togo,Number of Refugees from each Country,8100.0
