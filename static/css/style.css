@@ -3,12 +3,13 @@ Font-Size: 48px;
 Font-Family: 'Titillium Web', Sans-Serif;
 Font-Size: 16px; */
 
-body {
-    background: url(tiny-squares.png);
-}
+
+body{
+    background-color: white;
+    }
 
 #navbartop {
-    background: transparent;
+    background:#3e3e79 ;
 }
 
 .navbar-brand {
@@ -109,3 +110,18 @@ body {
   .legend .max {
     float: right;
   }
+
+   /* Styling for Newsfeed */
+   h4{
+    font: bold;
+    Font-Family: 'Dosis', Sans-Serif;
+    color:#11119b; 
+    cursor: pointer;
+   }
+
+   p{
+    font-family: 'Titillium Web', Sans-Serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.66);
+   }
+  

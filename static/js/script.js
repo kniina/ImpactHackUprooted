@@ -79,6 +79,8 @@ $(".nav-tabs").on("click", "#envirotab", function () {
           layer.on('click', function (e) {
             country = feature.properties.iso_a3
             update_to_selected_region(country)
+          get_related_news(country_dictionary[country])
+          console.log(country_dictionary[country] +"COUNTRY NAME")
           });
         }
       });
@@ -200,7 +202,23 @@ L.control.layers(overlayMaps, baseMaps, {
 
 //       valueProperty: "Refugees",
 
-//       // Set color scale
+// <<<<<<< databranch
+// //       // Set color scale
+// =======
+//     onEachFeature: function(feature, layer) {
+//       layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees in the US: " + feature.properties.refugee_count),
+//         //Function to update Country variable
+//         //bind click
+//         layer.on('click', function (e) {
+//           country = feature.properties.iso_a3
+//           update_to_selected_region(country)
+//           // get_country_name(country)
+//           // console.log(country + "COUNTRY")
+//           get_related_news(country_dictionary[country])
+//           console.log(country_dictionary[country] +"COUNTRY NAME")
+//         });
+//       }
+// >>>>>>> master
 
 //       scale: ["#D3D3D3", "#191970"],
 
@@ -247,127 +265,9 @@ L.control.layers(overlayMaps, baseMaps, {
 //       console.log(colors)
 //       var labels = [];
 
-//       // Add min & max
-//       var legendInfo = "<h1>Refugees</h1>" +
-//         "<div class=\"labels\">" +
-//           "<div class=\"min\">" + limits[0] + "</div>" +
-//           "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
-//         "</div>";
+// Pass our map layers into our layer control
+// Add the layer control to the map
+L.control.layers(overlayMaps, {
+  collapsed: true
+}).addTo(myMap);
 
-//       div.innerHTML = legendInfo;
-
-//       limits.forEach(function(limit, index) {
-//         labels.push("<li style=\"background-color: " + colors[index] + "\"></li>");
-//       });
-
-//       div.innerHTML += "<ul>" + labels.join("") + "</ul>";
-//       return div;
-//     };
-
-//     // Adding legend to the map
-//     legend.addTo(myMap);
-
-//   });
-
-//   var countrytotalsred = 
-//     d3.json(Link, function(data) {
-
-//     // Create a new choropleth layer
-//     geojson = L.choropleth(data, {
-
-//       // Define what  property in the features to us
-
-//       valueProperty: "Refugees",
-
-//       // Set color scale
-
-//       scale: ["#D3D3D3", "red"],
-
-//       // Number of breaks in step range
-
-//       steps: 11,
-
-//       // Style
-//     // This data must be passed
-//     style: {
-//       // Border color
-//       color: "#fff",
-//       weight: 1,
-//       fillOpacity: 0.8
-//     },
-
-
-//       // Binding a pop-up to each layer
-//       // Add event listener to add popup to layer and add to map
-
-//     onEachFeature: function(feature, layer) {
-//       layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
-//         //Function to update Country variable
-//         //bind click
-//         layer.on('click', function (e) {
-//           country = feature.properties.iso_a3
-//           update_to_selected_region(country)
-//         });
-//       }
-
-
-
-//   }).addTo(myMap);
-
-
-
-//     // Set up the legend
-//     var legend = L.control({ position: "bottomright" });
-//     legend.onAdd = function() {
-//       var div = L.DomUtil.create("div", "info legend");
-//       var limits = geojson.options.limits;
-//       console.log(limits)
-//       var colors = geojson.options.colors;
-//       console.log(colors)
-//       var labels = [];
-
-//       // Add min & max
-//       var legendInfo = "<h1>Refugees</h1>" +
-//         "<div class=\"labels\">" +
-//           "<div class=\"min\">" + limits[0] + "</div>" +
-//           "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
-//         "</div>";
-
-//       div.innerHTML = legendInfo;
-
-//       limits.forEach(function(limit, index) {
-//         labels.push("<li style=\"background-color: " + colors[index] + "\"></li>");
-//       });
-
-//       div.innerHTML += "<ul>" + labels.join("") + "</ul>";
-//       return div;
-//     };
-
-//     // Adding legend to the map
-//     legend.addTo(myMap);
-
-//   });
-
-//   // Create a baseMaps object
-// var baseMaps = {
-//   "basemap": basemap,
-// };
-
-//   // Create an overlay object
-// var overlayMaps = {
-//   "regular": countrytotals,
-//   "red": countrytotalsred
-// };
-
-// // Creating map object
-// var myMap = L.map("map", {
-//   center: [40.4637, 3.7492],
-//   zoom: 2,
-//   layers: [basemap, countrytotals]
-// });
-
-// // Pass our map layers into our layer control
-// // Add the layer control to the map
-// L.control.layers(baseMaps, overlayMaps, {
-//   collapsed: false
-// }).addTo(myMap);

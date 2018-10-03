@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ImpactHack: Uprooted</title>
 
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  
+
     <!-- BOOTSTRAP LINKS BELOW -->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -30,6 +33,9 @@
     <!-- Mapbox API Key -->
     <script type="text/javascript" src="static/js/config.js"></script>
 
+    <!-- Google News API Key -->
+    <script type="text/javascript" src="static/js/config-news.js"></script>
+
     <!-- Leaflet-Choropleth JavaScript -->
     <script type="text/javascript" src="static/js/choropleth.js"></script>
 
@@ -44,12 +50,12 @@
     <nav class="navbar" id="navbartop">
         <div class="container-fluid">
           <div class="navbar-header">
-                <a class="navbar-brand" href="#" data-toggle="modal" data-target="#exampleModal"><img src="uprooted logo.png" style="height:150px"/></a>
+                <a class="navbar-brand" href="#" data-toggle="modal" data-target="#exampleModal"><img src="uprooted logo.png" style="height:120px"/></a>
             </div>
           <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://impacthack.devpost.com/"><i class="fa fa-question-circle-o"></i>&nbsp;&nbsp;What is ImpactHack?</a></li>
-                 <li><a href="https://www.wri.org/"><i class="fa fa-globe"></i>&nbsp;&nbsp;World Resources Institute</a></li>
-                 <li><a href="https://www.state.gov/"><i class="fa fa-university"></i>&nbsp;&nbsp;US State Department</a></li>
+                <li><a style="color:white" href="https://impacthack.devpost.com/"><i class="fa fa-question-circle-o" style="color:white"></i>&nbsp;&nbsp;What is ImpactHack?</a></li>
+                 <li><a style="color:white"href="https://www.wri.org/"><i class="fa fa-globe" style="color:white"></i>&nbsp;&nbsp;World Resources Institute</a></li>
+                 <li><a style="color:white" href="https://www.state.gov/"><i class="fa fa-university" style="color:white"></i>&nbsp;&nbsp;US State Department</a></li>
           </ul>
         </div>
       </nav>
@@ -101,8 +107,8 @@
             </div>
             <div class="row">
                 <br/>
-                <div id="relatedreading">Related Reading</div>
-                <div id="articles"></div>
+                <div id="relatedreading">Related News</div>
+                <ul id="Newsfeed"></ul>
             </div>
         </div>
       </div>
@@ -194,8 +200,8 @@ var refugees = "Number of Refugees from each Country";
 
 var active_x_metric = refugees
 var active_y_metric = political_freedom
-var selected_country = 'USA'
 
+var selected_country = 'USA'
 
 var countries = ['AFG',
 'SYR',
@@ -385,24 +391,45 @@ var countries = ['AFG',
 'NCL'
 ]
 
-/// CONTAINERS
-
-function load_articles(){
-  d3.queue()
-    .defer(d3.csv, './newyorktimesarticles.csv')
-      .await(function(error, articles) {
-      console.log('got csv')
-      console.log(articles)
-      d3.select("#articles")
-      .append("text")
-      .text(articles[7]['title'])
-      // articles.forEach(function(item, i){
-      //   console.log('Adding title')
-      //   d3.select("#articles")
-      //     .append("text")
-      //     .text(item['title'])
-  })
-}
+country_dictionary = {"AFG":"Afghanistan", "ALB":"Albania", "DZA":"Algeria", "ASM":"American Samoa",
+"AND":"Andorra", "AGO":"Angola", "AIA":"Anguilla", "ATG":"Antigua and Barbuda", "ARG":"Argentina",
+"ARM":"Armenia", "ABW":"Aruba", "AUS":"Australia", "AUT":"Austria", "AZE":"Azerbaijan", "BHS":"Bahamas",
+"BHR":"Bahrain", "BGD":"Bangladesh", "BRB":"Barbados", "BLR":"Belarus", "BEL":"Belgium", "BLZ":"Belize",
+"BEN":"Benin", "BMU":"Bermuda", "BTN":"Bhutan", "BOL":"Bolivia", "BIH":"Bosnia and Herzegovina",
+"BWA":"Botswana", "BRA":"Brazil", "VGB":"British Virgin Islands", "BRN":"Brunei Darussalam",
+"BGR":"Bulgaria", "BFA":"Burkina Faso", "BDI":"Burundi", "CPV":"Cabo Verde", "KHM":"Cambodia", "CMR":"Cameroon", 
+"CAN":"Canada", "CYM":"Cayman Islands", "CAF":"Central African Republic", "TCD":"Chad", "CHL":"Chile", 
+"CHN":"China", "HKG":" Hong Kong", "MAC":" Macao", "COL":"Colombia", "COM":"Comoros", "COG":"Republic of Congo", 
+"COK":"Cook Islands", "CRI":"Costa Rica", "HRV":"Croatia", "CUB":"Cuba", "CUW":"Curacao", "CYP":"Cyprus",
+"CZE":"Czech Republic", "CIV":"Cote d'Ivoire", "PRK":"North Korea", "COD":"Democratic Republic of Congo",
+"DNK":"Denmark", "DJI":"Djibouti", "DMA":"Dominica", "DOM":"Dominican Republic", "ECU":"Ecuador", "EGY":"Egypt",
+"SLV":"El Salvador", "GNQ":"Equatorial Guinea", "ERI":"Eritrea", "EST":"Estonia", "ETH":"Ethiopia", "FJI":"Fiji", 
+"FIN":"Finland", "FRA":"France", "GUF":"French Guiana", "PYF":"French Polynesia", "GAB":"Gabon", "GMB":"Gambia", 
+"GEO":"Georgia", "DEU":"Germany", "GHA":"Ghana", "GIB":"Gibraltar", "GRC":"Greece", "GRD":"Grenada", "GLP":"Guadeloupe",
+"GUM":"Guam", "GTM":"Guatemala", "GIN":"Guinea", "GNB":"Guinea-Bissau", "GUY":"Guyana", "HTI":"Haiti", "VAT":"Vatican", 
+"HND":"Honduras", "HUN":"Hungary", "ISL":"Iceland", "IND":"India", "IDN":"Indonesia", "IRN":"Iran", "IRQ":"Iraq", 
+"IRL":"Ireland", "ISR":"Israel", "ITA":"Italy", "JAM":"Jamaica", "JPN":"Japan", "JOR":"Jordan", "KAZ":"Kazakhstan",
+"KEN":"Kenya", "KIR":"Kiribati", "KWT":"Kuwait", "KGZ":"Kyrgyzstan", "LAO":"Lao", "LVA":"Latvia", "LBN":"Lebanon", 
+"LSO":"Lesotho", "LBR":"Liberia", "LBY":"Libya", "LIE":"Liechtenstein", "LTU":"Lithuania", "LUX":"Luxembourg", 
+"MDG":"Madagascar", "MWI":"Malawi", "MYS":"Malaysia", "MDV":"Maldives", "MLI":"Mali", "MLT":"Malta", 
+"MHL":"Marshall Islands", "MRT":"Mauritania", "MUS":"Mauritius", "MEX":"Mexico", "FSM":"Micronesia","MCO":"Monaco",
+"MNG":"Mongolia", "MNE":"Montenegro", "MAR":"Morocco", "MOZ":"Mozambique", "MMR":"Myanmar", "NAM":"Namibia", 
+"NRU":"Nauru", "NPL":"Nepal", "NLD":"Netherlands", "NZL":"New Zealand", "NIC":"Nicaragua", "NER":"Niger", 
+"NGA":"Nigeria", "NIU":"Niue", "NFK":"Norfolk Island", "NOR":"Norway", "OMN":"Oman", "PAK":"Pakistan", "PLW":"Palau",
+"PSE":"Palestinian", "PAN":"Panama", "PNG":"Papua New Guinea", "PRY":"Paraguay", "PER":"Peru", "PHL":"Philippines", 
+"POL":"Poland", "PRT":"Portugal", "PRI":"Puerto Rico", "QAT":"Qatar", "KOR":"South Korea", "MDA":"Rep. of Moldova", 
+"ROU":"Romania", "RUS":"Russian Federation", "RWA":"Rwanda", "KNA":"Saint Kitts and Nevis", "LCA":"Saint Lucia", 
+"VCT":"Saint Vincent and the Grenadines", "SPM" :"Saint-Pierre-et-Miquelon", "WSM":"Samoa", "SMR":"San Marino", 
+"STP":"Sao Tome and Principe", "SAU":"Saudi Arabia", "SEN":"Senegal", "SRB":"Serbia", "SYC":"Seychelles", 
+"SLE":"Sierra Leone", "SGP":"Singapore", "SVK":"Slovakia", "SVN":"Slovenia", "SLB":"Solomon Islands", 
+"SOM":"Somalia", "ZAF":"South Africa", "SSD":"South Sudan", "ESP":"Spain", "LKA":"Sri Lanka", "STL":"Stateless",
+"SDN":"Sudan", "SUR":"Suriname", "SJM":"Svalbard and Jan Mayen", "SWZ":"Swaziland", "SWE":"Sweden", 
+"CHE":"Switzerland", "SYR":"Syria", "TJK":"Tajikistan", "THA":"Thailand", "MKD":" Macedonia",
+"TAR":"Tibetan", "TLS":"Timor-Leste", "TGO":"Togo", "TON":"Tonga", "TTO":"Trinidad and Tobago", "TUN":"Tunisia", 
+"TUR":"Turkey", "TKM":"Turkmenistan", "TCA":"Turks and Caicos ", "TUV":"Tuvalu", "UGA":"Uganda", "UKR":"Ukraine",
+"ARE":"United Arab Emirates", "GBR":"United Kingdom", "TZA":" Tanzania", "USA":"United States of America",
+"URY":"Uruguay", "UZB":"Uzbekistan", "VUT":"Vanuatu", "UNK":"Refugees","VEN":"Venezuela", "VNM":"Viet Nam", 
+"WLF":"Wallis and Futuna Islands ", "ESH":"Western Sahara", "YEM":"Yemen", "ZMB":"Zambia", "ZWE":"Zimbabwe"}
 
 
 var scatter_svg = d3.select("#scatterplot")
@@ -503,9 +530,11 @@ scatter_svg.append("text")
     refresh_graphic()
   }
 
+  // Gets country
   function update_to_selected_region(region_name) {
     console.log('updating to selected region')
       selected_country = region_name
+
       update_labels()
 
       d3.selectAll('circle') //<-- or slap a class name on your circles and use that
@@ -526,7 +555,65 @@ scatter_svg.append("text")
 
       
       $("#countryexplanation").append("How does " + country_name + "'s " + current_metric + " level compare to other countries?")
+
+      console.log(selected_country + "THIS ONE")
+      update_labels();
+
   }
+
+  // var country_name = ''
+  // // Gets country name based on country code of selected country on map
+  // function get_country_name(selected_country){
+  //   console.log('getting country news')
+  //   for (var key in country_dictionary) {
+
+  //     // if (country_dictionary.hasOwnProperty(key)) {
+  //       if (selected_country = key){
+  //         console.log (country_dictionary[key]+"COUNTRY_DICT-SELECTED COUNTRY")
+  //         country_name = country_dictionary[key]
+  //         return country_dictionary[key] 
+  //       } 
+  //       else {
+  //         return "refugees"
+  //       }
+  //   }
+  // }
+
+
+
+// Uses selected country name to query the Google News API for country related refugee news
+function get_related_news(country_name){
+
+  var url = `https://newsapi.org/v2/everything?q=refugees%20and%20${country_name}&sortBy=relevance&apiKey=${apiKey}`
+  
+  d3.json(url, function(data){
+    console.log(data.articles);
+    response = data.articles;
+    console.log(response[0].title);
+
+    var related_news = d3.select('#Newsfeed');
+    related_news.html('');
+    
+    for (i = 0; i < 3; i++) {
+      related_news
+        .append('div')
+        .append('h4')
+        .text(response[i].title)
+          .on("click", function() { 
+            window.open(response[i].url); 
+          })
+        .append('p')
+        .text(response[i].description) 
+    }
+  });
+};
+
+function init() {
+  search_term = 'refugees';
+  get_related_news(search_term);
+};
+
+init()
 
   // End scatterplot setup
   function refresh_graphic(){
@@ -667,7 +754,7 @@ d3.queue()
       });
     console.log(lookup)
     refresh_graphic()
-    load_articles()
+    // load_articles()
     });
 
 
