@@ -25,6 +25,8 @@
     <!-- d3 JavaScript -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
+
+
     <!-- Mapbox API Key -->
     <script type="text/javascript" src="static/js/config.js"></script>
 
@@ -52,13 +54,35 @@
         </div>
       </nav>
 
+<!-- intro content 1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%"> 
+        </div>
+        <div class="col-md-4"> 
+          Placeholder text
+        </div>
+      </div>
+
+<!-- intro content 2 -->
 
     <div class="container">
         <div class="row">
-        <div class="col-md-8">
+          <div class="col-md-4">
+            Placeholder Text
+          </div>
+          <div class="col-md-8">
+              <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%"> 
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col-md-6">
                 <div id="map" style='height:100%; width:100%'></div>
         </div>
-        <div class="col-md-4 infobar">
+        
+        <div class="col-md-6 infobar">
             <div class="row">
                 <div id="countryname">COUNTRY NAME</div>
             </div>
@@ -73,6 +97,7 @@
                 <div id="scatterplot"></div>
                 <div id="graphtitle"></div>
                 <div id="graphexplanation"></div>
+                <div id="countryexplanation"></div>
             </div>
             <div class="row">
                 <br/>
@@ -80,7 +105,7 @@
                 <div id="articles"></div>
             </div>
         </div>
-
+      </div>
 
     </div>
     </div>
@@ -118,9 +143,9 @@
 
 <script>
 
-var margin = { top: 45, right: 40, bottom: 65, left: 40 };
+var margin = { top: 40, right: 40, bottom: 40, left: 40 };
 var sclfctr = .05
-var scatter_width = 300*(1+sclfctr) - margin.left - margin.right;
+var scatter_width = d3.select('.infobar').style('width').slice(0, -2) - margin.left - margin.right +1;
 var scatter_height = 300*(1+sclfctr) - margin.top - margin.bottom;
 
 function format_si(x) {
@@ -132,66 +157,233 @@ function format_si(x) {
 }
 
 var metric_info = {
-  "Number of Refugees from each Country to USA": {
-    "name": "Number of Refugees from each Country to USA",
+  "Number of Refugees from each Country": {
+    "name": "Number of Refugees from each Country",
     "units": "People",
     "scale": d3.scaleLinear().range([0,scatter_width]).clamp(true),
     "format": format_si,
-    "extent": [0,700000]
+    "extent": [0, 6308619]
   },
   "Water Stress, All Sectors": {
-    "name": "Water Stress, All Sectors",
+    "name": "Water Stress",
     "units": "Index Score",
-    "scale": d3.scaleLinear().range([0,scatter_width]).clamp(true),
+    "scale": d3.scaleLinear().range([0,scatter_height]).clamp(true),
     "format": format_si,
-    "extent": [0,5]
+    "extent": [5,0]
   },
   "Political Freedoms Index": {
     "name": "Political Freedoms Index",
     "units": "Index Score",
-    "scale": d3.scaleLinear().range([0,scatter_width]).clamp(true),
+    "scale": d3.scaleLinear().range([0,scatter_height]).clamp(true),
     "format": format_si,
-    "extent": [0,100]
+    "extent": [100, 0]
   },
   "GDP": {
     "name": "GDP",
     "units": "USD",
-    "scale": d3.scaleLinear().range([0,scatter_width]).clamp(true),
+    "scale": d3.scaleLinear().range([0,scatter_height]).clamp(true),
     "format": format_si,
-    "extent": [0,25000000000]
+    "extent": [25000000000, 0]
   }
 }
 
 var gdp = "GDP";
 var water_stress = "Water Stress, All Sectors";
 var political_freedom = "Political Freedoms Index";
-var refugees = "Number of Refugees from each Country to USA";
+var refugees = "Number of Refugees from each Country";
 
 var active_x_metric = refugees
 var active_y_metric = political_freedom
-var selected_country = 'CHN'
+var selected_country = 'USA'
 
-var countries = ['ALB', 'DZA', 'AND', 'AGO', 'ATG', 'ARG', 'ARM', 'AUS', 'AUT',
-       'AZE', 'BHS', 'BHR', 'BGD', 'BRB', 'BLR', 'BEL', 'BLZ', 'BEN',
-       'BMU', 'BTN', 'BIH', 'BWA', 'BRA', 'BRN', 'BGR', 'BFA', 'BDI',
-       'KHM', 'CAN', 'CPV', 'CAF', 'TCD', 'CHL', 'CHN', 'COL', 'COM',
-       'COG', 'CRI', 'CIV', 'HRV', 'CUB', 'CYP', 'CZE', 'ZAR', 'DNK',
-       'DJI', 'DMA', 'DOM', 'ECU', 'EGY', 'SLV', 'GNQ', 'ERI', 'EST',
-       'ETH', 'FSM', 'FJI', 'FIN', 'FRA', 'GAB', 'GMB', 'GEO', 'DEU',
-       'GHA', 'GRC', 'GRL', 'GRD', 'GTM', 'GIN', 'GNB', 'GUY', 'HTI',
-       'HND', 'HKG', 'HUN', 'ISL', 'IND', 'IDN', 'IRQ', 'IRL', 'IRN',
-       'ISR', 'ITA', 'JAM', 'JPN', 'JOR', 'KAZ', 'KEN', 'KIR', 'KWT',
-       'KGZ', 'LAO', 'LVA', 'LBN', 'LBR', 'LBY', 'LTU', 'LUX', 'MAC',
-       'MKD', 'MDG', 'MWI', 'MYS', 'MDV', 'MLI', 'MLT', 'MHL', 'MRT',
-       'MUS', 'MEX', 'MNG', 'MNE', 'MAR', 'MOZ', 'MMR', 'NAM', 'NPL',
-       'NLD', 'NZL', 'NIC', 'NER', 'NGA', 'NOR', 'OMN', 'PAK', 'PLW',
-       'PAN', 'PNG', 'PRY', 'PER', 'PHL', 'BOL', 'POL', 'PRT', 'QAT',
-       'CMR', 'KOR', 'SDN', 'ROM', 'RUS', 'RWA', 'STP', 'SAU', 'SEN',
-       'SRB', 'SYC', 'SLE', 'SGP', 'SVK', 'SVN', 'SLB', 'ZAF', 'ESP',
-       'LKA', 'KNA', 'VCT', 'SUR', 'SWZ', 'SWE', 'CHE', 'TJK', 'THA',
-       'TGO', 'TON', 'TTO', 'TUN', 'TUR', 'TKM', 'UGA', 'UKR', 'ARE',
-       'GBR', 'TZA', 'USA', 'URY', 'UZB', 'VUT', 'VEN', 'VNM', 'YEM',
-       'ZMB', 'ZWE']
+
+var countries = ['AFG',
+'SYR',
+'IRQ',
+'SOM',
+'SDN',
+'SSD',
+'COD',
+'MMR',
+'COL',
+'VNM',
+'ERI',
+'CAF',
+'BDI',
+'CHN',
+'RWA',
+'PSE',
+'LKA',
+'TUR',
+'PAK',
+'UKR',
+'RUS',
+'MLI',
+'IRN',
+'NGA',
+'AGO',
+'ETH',
+'HRV',
+'CIV',
+'BTN',
+'BIH',
+'LBR',
+'TCD',
+'MRT',
+'HTI',
+'ZWE',
+'SEN',
+'GHA',
+'IDN',
+'COG',
+'KHM',
+'ARM',
+'IND',
+'TGO',
+'GIN',
+'AZE',
+'ALB',
+'CMR',
+'EGY',
+'SLE',
+'BGD',
+'SLV',
+'LBN',
+'GEO',
+'MEX',
+'KEN',
+'GTM',
+'UGA',
+'LAO',
+'VEN',
+'CUB',
+'NPL',
+'YEM',
+'UZB',
+'DZA',
+'PER',
+'GMB',
+'MKD',
+'BLR',
+'LBY',
+'HND',
+'MDA',
+'KAZ',
+'ROU',
+'KGZ',
+'MAR',
+'BGR',
+'JOR',
+'TUN',
+'MNG',
+'HUN',
+'POL',
+'MNE',
+'NIC',
+'BFA',
+'JAM',
+'FJI',
+'GNB',
+'VCT',
+'NAM',
+'CZE',
+'ISR',
+'BRA',
+'PRK',
+'TZA',
+'KWT',
+'ECU',
+'NER',
+'PHL',
+'DJI',
+'CHL',
+'SAU',
+'TJK',
+'GUY',
+'LCA',
+'THA',
+'TKM',
+'KOR',
+'BOL',
+'MYS',
+'ARG',
+'LVA',
+'COM',
+'ZAF',
+'BEN',
+'SVK',
+'CRI',
+'LTU',
+'DOM',
+'EST',
+'TTO',
+'MDG',
+'GRD',
+'ARE',
+'MWI',
+'BHR',
+'GNQ',
+'ZMB',
+'PNG',
+'JPN',
+'GAB',
+'BHS',
+'DEU',
+'BWA',
+'GBR',
+'URY',
+'CAN',
+'MOZ',
+'SWZ',
+'PRY',
+'FRA',
+'PAN',
+'GRC',
+'BRB',
+'SGP',
+'BEL',
+'MUS',
+'ITA',
+'QAT',
+'NLD',
+'ATG',
+'OMN',
+'DMA',
+'ESP',
+'BLZ',
+'SYC',
+'SVN',
+'AUS',
+'MDV',
+'SUR',
+'PRT',
+'CPV',
+'NZL',
+'KNA',
+'SWE',
+'CHE',
+'TON',
+'LSO',
+'AUT',
+'TCA',
+'DNK',
+'CYP',
+'IRL',
+'NOR',
+'FIN',
+'AND',
+'MLT',
+'CYM',
+'ISL',
+'MCO',
+'MHL',
+'GIB',
+'SMR',
+'BRN',
+'PLW',
+'NRU',
+'NCL'
+]
 
 /// CONTAINERS
 
@@ -239,7 +431,7 @@ scatter_svg.append("text")
   // DRAW SCATTER
   scatter_svg.append("g")
     .attr("transform", "translate(0," + scatter_height + ")")
-    .attr("class", "x axis");
+    .attr("class", "x axis")
   scatter_svg.selectAll(".x.axis text")
     .attr("y", 8);
   scatter_svg.append("g")
@@ -253,7 +445,7 @@ scatter_svg.append("text")
     .style("stroke-width", 1)
     .attr("y1", 0)
     .attr("y2", scatter_height)
-    .attr("x1", scatter_width/2)
+    .attr("x1", 0)
     .attr("x2", scatter_width/2)
 
   scatter_svg
@@ -263,7 +455,7 @@ scatter_svg.append("text")
     .style("stroke-width", 1)
     .attr("x1", 0)
     .attr("x2", scatter_width)
-    .attr("y1", scatter_height/2)
+    .attr("y1", 0)
     .attr("y2", scatter_height/2)
   // All axes drawing occurs here
   // Could use a logic check to draw axes if they don't yet exist, this works fine though
@@ -284,11 +476,20 @@ scatter_svg.append("text")
     })
     .style("display", "none");
   group
+    .data(countries)
     .append("circle")
-    .on("mouseover", function(d) {
-        var country = d;
-        update_to_selected_region(country)
+    .attr("id", (function(d) {
+      var country = d;
+      return(country)
+    }))
+    .on("click", function(d) {
+        update_to_selected_region(d)
       })
+    .bind
+
+ 
+
+    
 
 
   function set_active_y(y){
@@ -305,7 +506,26 @@ scatter_svg.append("text")
   function update_to_selected_region(region_name) {
     console.log('updating to selected region')
       selected_country = region_name
-      update_labels();
+      update_labels()
+
+      d3.selectAll('circle') //<-- or slap a class name on your circles and use that
+          .style('fill', '#191970')
+          .style('opacity', '.1')
+        console.log("click " + region_name)
+        // set selected one to Red
+      d3.select("#" + region_name)
+        .style('fill', 'red')
+        .style('opacity', '1');
+
+      $("#countryexplanation").empty();
+      
+      datum = lookup[region_name]
+      country_name = datum.name
+
+      current_metric = metric_info[active_y_metric].name
+
+      
+      $("#countryexplanation").append("How does " + country_name + "'s " + current_metric + " level compare to other countries?")
   }
 
   // End scatterplot setup
@@ -322,7 +542,8 @@ scatter_svg.append("text")
     var xAxis = d3.axisBottom()
       .tickSize(-scatter_width)
       .tickFormat(metric_info[active_x_metric].format)
-      .scale(xscale);
+      .scale(xscale)
+      .ticks(4);
     scatter_svg.select(".x.axis")
       .transition()
       .call(xAxis);
@@ -358,7 +579,7 @@ scatter_svg.append("text")
       .transition()
       .duration(700)
       .style("opacity", function(d) {
-        console.log(d)
+        //console.log(d)
         if (lookup[d]){
           if (lookup[d][active_x_metric] == ""){return 0;}
           if (lookup[d][active_y_metric] == ""){return 0;}
@@ -394,8 +615,8 @@ scatter_svg.append("text")
 function update_labels(){
   console.log('trying now')
   console.log(selected_country)
-  console.log(lookup)
-  console.log(lookup[selected_country])
+  //console.log(lookup)
+  //console.log(lookup[selected_country])
   datum = lookup[selected_country]
   console.log(datum)
   country_name = datum.name
@@ -442,6 +663,7 @@ d3.queue()
         lookup[d["Country Code"]] = lookup[d["Country Code"]] || {};
         lookup[d["Country Code"]][d["variable"]] = d['value'];
         lookup[d["Country Code"]]["name"] = lookup[d["Country Code"]]["name"] || d["Country Name"]
+        lookup[d["Country Code"]]["code"] = lookup[d["Country Code"]]["code"] || d["Country Code"]
       });
     console.log(lookup)
     refresh_graphic()

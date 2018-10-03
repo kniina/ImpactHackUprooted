@@ -54,6 +54,11 @@ body {
     font-size: 16px;
 }
 
+#countryexplanation {
+    font-family: 'Titillium Web', Sans-Serif;
+    font-size: 16px;
+}
+
 #relatedreading {
     font-family: 'Dosis', Sans-Serif;
     font-size: 20px;
