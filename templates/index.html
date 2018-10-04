@@ -30,11 +30,8 @@
 
 
 
-    <!-- Mapbox API Key -->
+    <!-- Mapbox API Key / Google News API -->
     <script type="text/javascript" src="static/js/config.js"></script>
-
-    <!-- Google News API Key -->
-    <script type="text/javascript" src="static/js/config-news.js"></script>
 
     <!-- Leaflet-Choropleth JavaScript -->
     <script type="text/javascript" src="static/js/choropleth.js"></script>
@@ -60,35 +57,17 @@
         </div>
       </nav>
 
-<!-- intro content 1 -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%">
-        </div>
-        <div class="col-md-4">
-          Placeholder text
-        </div>
-      </div>
 
-<!-- intro content 2 -->
 
     <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            Placeholder Text
-          </div>
-          <div class="col-md-8">
-              <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%">
-          </div>
-        </div>
+      
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
                 <div id="map" style='height:100%; width:100%'></div>
         </div>
 
-        <div class="col-md-6 infobar">
+        <div class="col-md-5 infobar">
             <div class="row">
                 <div id="countryname">COUNTRY NAME</div>
             </div>
@@ -541,7 +520,11 @@ scatter_svg.append("text")
           .style('fill', '#191970')
           .style('opacity', '.1')
         console.log("click " + region_name)
+
         // set selected one to Red
+      d3.selectAll('  leaflet-interactive') //<-- or slap a class name on your circles and use that
+        .style('fill', '#191970')
+
       d3.select("#" + region_name)
         .style('fill', 'red')
         .style('opacity', '1');
@@ -589,7 +572,7 @@ function get_related_news(country_name){
   d3.json(url, function(data){
     console.log(data.articles);
     response = data.articles;
-    console.log(response[0].title);
+    console.log(response);
 
     var related_news = d3.select('#Newsfeed');
     related_news.html('');
