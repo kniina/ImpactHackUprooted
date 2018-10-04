@@ -57,46 +57,17 @@
         </div>
       </nav>
 
-<<<<<<< HEAD:index.html
-=======
-<!-- intro content 1 -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%">
-        </div>
-        <div class="col-md-4">
-          Placeholder text
-        </div>
-      </div>
->>>>>>> d2cfd8d41d1eb979df1bcd7309fc2901ff217565:templates/index.html
 
 
     <div class="container">
-<<<<<<< HEAD:index.html
       
-=======
-        <div class="row">
-          <div class="col-md-4">
-            Placeholder Text
-          </div>
-          <div class="col-md-8">
-              <img src="https://www.pmmer.com/wp-content/uploads/2015/07/UK.png" width="100%">
-          </div>
-        </div>
->>>>>>> d2cfd8d41d1eb979df1bcd7309fc2901ff217565:templates/index.html
 
       <div class="row">
         <div class="col-md-7">
                 <div id="map" style='height:100%; width:100%'></div>
         </div>
-<<<<<<< HEAD:index.html
-        
-        <div class="col-md-5 infobar">
-=======
 
-        <div class="col-md-6 infobar">
->>>>>>> d2cfd8d41d1eb979df1bcd7309fc2901ff217565:templates/index.html
+        <div class="col-md-5 infobar">
             <div class="row">
                 <div id="countryname">COUNTRY NAME</div>
             </div>
@@ -549,7 +520,11 @@ scatter_svg.append("text")
           .style('fill', '#191970')
           .style('opacity', '.1')
         console.log("click " + region_name)
+
         // set selected one to Red
+      d3.selectAll('  leaflet-interactive') //<-- or slap a class name on your circles and use that
+        .style('fill', '#191970')
+
       d3.select("#" + region_name)
         .style('fill', 'red')
         .style('opacity', '1');
@@ -607,16 +582,9 @@ function get_related_news(country_name){
         .append('div')
         .append('h4')
         .text(response[i].title)
-<<<<<<< HEAD:index.html
-        .on("click", function() {
-          for (i = 0; i < 3; i++) {
-           window.open(response[i].url); 
-         }})
-=======
           .on("click", function() {
             window.open(response[i].url);
           })
->>>>>>> d2cfd8d41d1eb979df1bcd7309fc2901ff217565:templates/index.html
         .append('p')
         .text(response[i].description)
     }
