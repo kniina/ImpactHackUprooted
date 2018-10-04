@@ -522,7 +522,7 @@ scatter_svg.append("text")
         console.log("click " + region_name)
 
         // set selected one to Red
-      d3.selectAll('  leaflet-interactive') //<-- or slap a class name on your circles and use that
+      d3.selectAll("leaflet-interactive") //<-- or slap a class name on your circles and use that
         .style('fill', '#191970')
 
       d3.select("#" + region_name)
@@ -540,7 +540,7 @@ scatter_svg.append("text")
       $("#countryexplanation").append("How does " + country_name + "'s " + current_metric + " level compare to other countries?")
 
       console.log(selected_country + "THIS ONE")
-      update_labels();
+      update_labels()
 
   }
 

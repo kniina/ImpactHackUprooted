@@ -1,15 +1,3 @@
-// need a Document Ready Function to open the modal upon
-// first starting page; then can click into content
-// NOTE the modal is also triggered by clicking on navbar brand
-
-// need an onclick to map
-// to display a country's name
-// and that onlick pulls
-// the correct country's information
-// into the infobar
-// it should also append the politgraph's Title, since
-// that is empty when the page loads
-
 
 $(".nav-tabs").on("click", "#polittab", function () {
   // on click:
@@ -57,11 +45,15 @@ $(".nav-tabs").on("click", "#envirotab", function () {
   // Link to GeoJSON
   var Link = "static/bounds_with_refugee_counts.geojson"
   var geojson;
+  
   // Grab data with d3
   d3.json(Link, function(data) {
     createFeatures(data);
+    console.log(data);
   });
+
   function createFeatures(data){
+
     var totalrefugees = L.choropleth(data, {
       valueProperty: "Refugees",
       scale: ["#D3D3D3", "#191970"],
@@ -75,14 +67,15 @@ $(".nav-tabs").on("click", "#envirotab", function () {
       onEachFeature: function(feature, layer) {
         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
           //Function to update Country variable
+        
           //bind click
-          layer.on('click', function (e) {
+        layer.on('click', function (e) {
             country = feature.properties.iso_a3
             update_to_selected_region(country)
-          get_related_news(country_dictionary[country])
-          });
-        }
-      });
+            get_related_news(country_dictionary[country])
+        });
+      }
+    });
 
     var destinations = L.choropleth(data, {
       valueProperty: "Refugees",
@@ -94,27 +87,47 @@ $(".nav-tabs").on("click", "#envirotab", function () {
         weight: 1,
         fillOpacity: 0.8,
       },
-
       onEachFeature: function(feature, layer) {
         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
           //Function to update Country variable
           //bind click
-          layer.on('click', function (e) {
-            country = feature.properties.iso_a3
-            update_to_selected_region(country)
-            console.log(country);
-            d3.json(`/refugees_origin_destination/${country}`, function(json) {
-                console.log("newdata", json);
-            });
+        layer.on('click', function (e) {
+          country = feature.properties.iso_a3
+          update_to_selected_region(country)
+          get_related_news(country_dictionary[country])
+          d3.json(`/refugees_origin_destination/${country}`, function(json) {
+            console.log("newdata", json)
           })
+          })
+        
         }
-      })
+
+      }); 
+      
+
+
+    //   onEachFeature: function(feature, layer) {
+    //     layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
+    //       //Function to update Country variable
+    //       //bind click
+    //     layer.on('click', function (e) {
+    //       country = feature.properties.iso_a3
+    //       update_to_selected_region(country)
+    //       console.log(country);
+          //  d3.json(`/refugees_origin_destination/${country}`, function(json) {
+          //    console.log("newdata", json)
+          //  })
+    //     }),
+    //     // layer.style(className: feature.properties.iso_a3),
+    //   }  
+    
+    // })
 
 
       //});
 
     createMap(totalrefugees, destinations)
-    }
+
 
 
 
@@ -141,6 +154,8 @@ $(".nav-tabs").on("click", "#envirotab", function () {
         zoom: 2,
         layers: [basemap, totalrefugees]
       });
+
+
   var legend = L.control({ position: "bottomright" });
   legend.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend");
@@ -170,11 +185,16 @@ L.control.layers(overlayMaps, baseMaps, {
   collapsed: false
 }).addTo(myMap);
 
- totalrefugees.eachLayer(function (layer) {
-   layer._path.class = layer.feature.properties.iso_a3
-     })
+//  destinations.eachLayer(function (layer) {
+//    layer._path.id = layer.feature.properties.iso_a3
+//      })
+//  totalrefugees.eachLayer(function (layer) {
+//   layer._path.id = layer.feature.properties.iso_a3
+//     })
+ 
 
-}
+}}
+
 
 
 
