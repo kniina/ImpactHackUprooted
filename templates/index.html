@@ -15,6 +15,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
     <!-- END BOOTSTRAP SECTION -->
 
     <!-- Leaflet CSS & JS-->
@@ -24,6 +27,7 @@
     <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
     integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
     crossorigin=""></script>
+
 
     <!-- d3 JavaScript -->
     <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -64,6 +68,12 @@
 
       <div class="row">
         <div class="col-md-7">
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active" id="Map1"><a href="#" onclick="build_map1" >Countries of Origin</a></li>
+                    <li id="Map2"><a href="#" onclick="build_map2"> Destination Countries</a></li>
+                </ul>
+            </div>
                 <div id="map" style='height:100%; width:100%'></div>
         </div>
 
@@ -96,8 +106,10 @@
     </div>
 
 
+
+
 <!-- Modal -->
-<div class="modal fade modalstyling" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade in modalstyling" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
            <div class="modal-content">
              <div class="modal-header">
@@ -106,9 +118,33 @@
                  <span aria-hidden="true">&times;</span>
                </button>
              </div>
-             <div class="modal-body">
-                    By the end of 2017, 68.5 million individuals were forcibly displaced worldwide as a result of persecution, conflict, violence or human rights violations.
-             </div>
+             <div class="modal-body" style="height: 650px">
+                   <h3>By the end of 2017, 68.5 million individuals were forcibly displaced worldwide as a result of persecution, conflict, violence, or human rights violations. 
+                     <hr>
+                     <div class="row vcenter">
+                        <div class="col-md-4">
+                          <img src="http://www.clker.com/cliparts/S/o/l/i/H/A/uk-map-hi.png" width="200px">
+                        </div>
+                      <div class="col-md-8">  
+                          That's 2.3 million more people than the entire population of the UK.</h3>
+
+                          <hr>
+                      
+
+                      <div class="row">
+                          <h3>Use the maps to explore which countries refugees are migrating from, 
+                            how the conditions in their country of origin compare to the rest of the world, 
+                            and which countries they are migrating to.</h3>
+                      </div>
+                    </div>
+              
+                       
+                     
+                     
+
+                 
+                
+             
              <div class="modal-footer">
                <button type="button" class="btn btn-primary" data-dismiss="modal">Learn More</button>
              </div>
@@ -118,7 +154,7 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 <script type="text/javascript" src="static/js/script.js"></script>
 
 
@@ -130,7 +166,7 @@
 
 var margin = { top: 40, right: 40, bottom: 40, left: 40 };
 var sclfctr = .05
-var scatter_width = d3.select('.infobar').style('width').slice(0, -2) - margin.left - margin.right +1;
+var scatter_width = 300*(1+sclfctr) - margin.left - margin.right +1;
 var scatter_height = 300*(1+sclfctr) - margin.top - margin.bottom;
 
 function format_si(x) {
@@ -521,10 +557,6 @@ scatter_svg.append("text")
           .style('opacity', '.1')
         console.log("click " + region_name)
 
-        // set selected one to Red
-      d3.selectAll("leaflet-interactive") //<-- or slap a class name on your circles and use that
-        .style('fill', '#191970')
-
       d3.select("#" + region_name)
         .style('fill', 'red')
         .style('opacity', '1');
@@ -577,7 +609,7 @@ function get_related_news(country_name){
     var related_news = d3.select('#Newsfeed');
     related_news.html('');
 
-    for (i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
       related_news
         .append('div')
         .append('h4')

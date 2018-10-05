@@ -3,6 +3,13 @@ Font-Size: 48px;
 Font-Family: 'Titillium Web', Sans-Serif;
 Font-Size: 16px; */
 
+h3 {
+    text-align: center;
+}
+.vcenter {
+    display: flex;
+    align-items: center;
+}
 
 body{
     background-color: white;

@@ -1,3 +1,9 @@
+//Open Modal on page load
+
+$(window).on("load", (function(){
+  //Disply the modal popup
+  $('#exampleModal').modal('show');
+        }));
 
 $(".nav-tabs").on("click", "#polittab", function () {
   // on click:
@@ -45,7 +51,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
   // Link to GeoJSON
   var Link = "static/bounds_with_refugee_counts.geojson"
   var geojson;
-  
+
   // Grab data with d3
   d3.json(Link, function(data) {
     createFeatures(data);
@@ -67,16 +73,38 @@ $(".nav-tabs").on("click", "#envirotab", function () {
       onEachFeature: function(feature, layer) {
         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
           //Function to update Country variable
-        
+        layer._pathId = "test",
           //bind click
         layer.on('click', function (e) {
             country = feature.properties.iso_a3
             update_to_selected_region(country)
             get_related_news(country_dictionary[country])
+            
+            // d3.json(`/refugees_origin_destination/${country}`, function(json) {
+            //   console.log("newdata", json);
+            //   d3.selectAll('path.leaflet-interactive')
+            //     .style('fill', 'gray')
+            //   d3.select("#" + country)
+            //     .style('fill', 'green')})
+            //   d3.select(this).style('fill', 'green')
+              // for keys in json:
+              //   d3.select("#" + keys)
+              //     .style('fill', 'purple')
+              //     .style('fillOpacity', (keys['Percentage']*1.5))
         });
       }
     });
 
+    
+//  destinations.eachLayer(function (layer) {
+//   layer._path.id = layer.feature.properties.iso_a3
+//     })
+    
+// totalrefugees.eachLayer(function (layer) {
+//  layer._path.id = layer.feature.properties.iso_a3
+//    })
+//(typeof totalrefugees._path != 'undefined') ? (console.log("NO ID")): "";  
+            //else { totalrefugees.eachLayer(function (layer2){ layer2._path.id = totalrefugees.feature.properties.iso_a3; }); }
     var destinations = L.choropleth(data, {
       valueProperty: "Refugees",
       scale: ["#D3D3D3", "red"],
@@ -86,13 +114,16 @@ $(".nav-tabs").on("click", "#envirotab", function () {
         color: "#fff",
         weight: 1,
         fillOpacity: 0.8,
+        name: "test"
       },
       onEachFeature: function(feature, layer) {
         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
           //Function to update Country variable
           //bind click
+        country = feature.properties.iso_a3,
+        layer.__polygonId = "test",
         layer.on('click', function (e) {
-          country = feature.properties.iso_a3
+
           update_to_selected_region(country)
           get_related_news(country_dictionary[country])
           d3.json(`/refugees_origin_destination/${country}`, function(json) {
@@ -101,8 +132,14 @@ $(".nav-tabs").on("click", "#envirotab", function () {
           })
         
         }
-
-      }); 
+//  destinations.eachLayer(function (layer) {
+//   layer._path.id = layer.feature.properties.iso_a3
+//     })
+    
+// totalrefugees.eachLayer(function (layer) {
+//  layer._path.id = layer.feature.properties.iso_a3
+//    })
+      });
       
 
 
@@ -155,7 +192,6 @@ $(".nav-tabs").on("click", "#envirotab", function () {
         layers: [basemap, totalrefugees]
       });
 
-
   var legend = L.control({ position: "bottomright" });
   legend.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend");
@@ -181,21 +217,85 @@ $(".nav-tabs").on("click", "#envirotab", function () {
   legend.addTo(myMap);
 // Pass our map layers into our layer control
 // Add the layer control to the map
-L.control.layers(overlayMaps, baseMaps, {
-  collapsed: false
-}).addTo(myMap);
+// L.control.layers(overlayMaps, baseMaps, {
+//   collapsed: false
+// }).addTo(myMap);
 
-//  destinations.eachLayer(function (layer) {
-//    layer._path.id = layer.feature.properties.iso_a3
-//      })
-//  totalrefugees.eachLayer(function (layer) {
-//   layer._path.id = layer.feature.properties.iso_a3
-//     })
- 
+
 
 }}
 
+    // destinations.eachLayer(function (layer) {
+    //   layer._path.id = layer.feature.properties.iso_a3
+    // })
+    
+    // totalrefugees.eachLayer(function (layer) {
+    //   layer._path.id = layer.feature.properties.iso_a3
+    // }),
 
+//     var totalrefugees = L.choropleth(data, {
+//       valueProperty: "Refugees",
+//       scale: ["#D3D3D3", "#191970"],
+//       steps: 11,
+//       style: {
+//         // Border color
+//         color: "#fff",
+//         weight: 1,
+//         fillOpacity: 0.8
+//       },
+//       onEachFeature: function(feature, layer) {
+//         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
+//           //Function to update Country variable
+        
+//           //bind click
+//         layer.on('click', function (e) {
+//             country = feature.properties.iso_a3
+//             update_to_selected_region(country)
+//             get_related_news(country_dictionary[country])
+//         });
+//       }
+//     });
 
+    
+//  destinations.eachLayer(function (layer) {
+//   layer._path.id = layer.feature.properties.iso_a3
+//     })
+    
+// totalrefugees.eachLayer(function (layer) {
+//  layer._path.id = layer.feature.properties.iso_a3
+//    })
 
+//     var destinations = L.choropleth(data, {
+//       valueProperty: "Refugees",
+//       scale: ["#D3D3D3", "red"],
+//       steps: 11,
+//       style: {
+//         // Border color
+//         color: "#fff",
+//         weight: 1,
+//         fillOpacity: 0.8,
+//       },
+//       onEachFeature: function(feature, layer) {
+//         layer.bindPopup("Origin Country : " + feature.properties.name + "<hr> Refugees: " + feature.properties.Refugees),
+//           //Function to update Country variable
+//           //bind click
+//         country = feature.properties.iso_a3
+//         layer.on('click', function (e) {
+
+//           update_to_selected_region(country)
+//           get_related_news(country_dictionary[country])
+//           d3.json(`/refugees_origin_destination/${country}`, function(json) {
+//             console.log("newdata", json)
+//           })
+//           })
+        
+//         }
+// //  destinations.eachLayer(function (layer) {
+// //   layer._path.id = layer.feature.properties.iso_a3
+// //     })
+    
+// // totalrefugees.eachLayer(function (layer) {
+// //  layer._path.id = layer.feature.properties.iso_a3
+// //    })
+//       });
 
