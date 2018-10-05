@@ -62,6 +62,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
     createFeatures(data);
   });
   function createFeatures(data){
+    console.log(data);
     var totalrefugees = L.choropleth(data, {
       valueProperty: "Refugees",
       scale: ["#D3D3D3", "#191970"],
@@ -100,12 +101,91 @@ $(".nav-tabs").on("click", "#envirotab", function () {
           //Function to update Country variable
           //bind click
           layer.on('click', function (e) {
-            country = feature.properties.iso_a3
-            update_to_selected_region(country)
+            console.log(typeof(e));
+            country = feature.properties.iso_a3;
+            update_to_selected_region(country);
+            get_related_news(country_dictionary[country]);
             console.log(country);
             d3.json(`/refugees_origin_destination/${country}`, function(json) {
-                console.log("newdata", json);
-            });
+                console.log("newdata", json[country]);
+                // console.log("Percentage", json[country].keys()['Percentage']);
+                d3.selectAll('path.leaflet-interactive')
+                  .style('fill', 'gray');
+                d3.select('#' + country)
+                  .style('fill', 'red');
+                  // .style('fill', 'green');
+                // console.log("AYUDAME: ", json[country]['AUS']['Percentage'])
+                for (keys in json[country]) {
+                  console.log("KEY: ", keys);
+                  console.log("Percentage AYUDAME: ", json[country][keys]['Percentage'])
+                  d3.select("#" + keys)
+                    .style('fill', '#191970')
+                    .style('fill-opacity', (((json[country][keys]['Percentage'])+0.1)*2));
+                  }
+                });
+
+//             d3.json(`/refugees_over_time/${country}`, function(response) {
+//               console.log("Over Time", response);
+//               var chart_title = d3.select("#overtime")
+//               chart_title.selectAll("text").remove();
+//               country_name = update_to_selected_region(country);
+//               chart_title.append("text").text(`Refugees from ${country_name} Over Time` );
+//
+//               d3.select("#overtime_2")
+//               var svgWidth = 700;
+//               var svgHeight = 300;
+//
+// // Define the chart's margins as an object
+//               var margin = {
+//                 top: 10,
+//                 right: 30,
+//                 bottom: 10,
+//                 left: 30
+//               };
+//
+// // Define dimensions of the chart area
+//               var chartWidth = svgWidth - margin.left - margin.right;
+//               var chartHeight = svgHeight - margin.top - margin.bottom;
+//
+// // Select body, append SVG area to it, and set its dimensions
+//               var linechart_svg = d3.select("#overtime_2")
+//                 .append("svg")
+//                   .attr("width", chartWidth)
+//                   .attr("height", chartHeight)
+//                 .append("g")
+//                   .attr("transform", `translate(${margin.left}, ${margin.top})`);
+//
+//               var xLinearScale = d3.scaleLinear()
+//                 .domain([0,10])
+//                 .range([0, chartWidth]);
+//
+//   // Configure a linear scale with a range between the chartHeight and 0
+//               var yLinearScale = d3.scaleLinear()
+//                 .domain([0, 10])
+//                 .range([chartHeight, 0]);
+//
+//               var bottomAxis = d3.axisBottom(xLinearScale);
+//               var leftAxis = d3.axisLeft(yLinearScale);
+//
+//               linechart_svg.append("g")
+//                 .classed("axis", true)
+//                 .call(leftAxis);
+//
+//                 // Append an SVG group element to the chartGroup, create the bottom axis inside of it
+//                 // Translate the bottom axis to the bottom of the page
+//               linechart_svg.append("g")
+//                 .classed("axis", true)
+//                 .attr("transform", `translate(0, ${chartHeight})`)
+//                 .call(bottomAxis);
+//             });
+              // country.id.background-color: 'red'
+              //   for (keys() in json):
+              //     key.id.background_color: 'purple'
+              //   //all countries set to gray
+                // country set to red
+                // for all keys in newdata
+                // set country to purple
+
           })
         }
       })
@@ -117,15 +197,15 @@ $(".nav-tabs").on("click", "#envirotab", function () {
     }
 
 
-
-
-
-
   function createMap(totalrefugees, destinations) {
     var basemap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
       attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
       maxZoom: 18,
+<<<<<<< HEAD
       minZoom: 2,
+=======
+      minZoom: 1,
+>>>>>>> Brian
       id: "mapbox.light",
       accessToken: API_KEY
     });
@@ -139,10 +219,11 @@ $(".nav-tabs").on("click", "#envirotab", function () {
     var myMap = L.map("map", {
         center: [40.4637, 3.7492],
         zoom: 2,
-        layers: [basemap, totalrefugees]
+        layers: [basemap, destinations]
       });
-  var legend = L.control({ position: "bottomright" });
-  legend.onAdd = function() {
+
+  var legendTotalRefugees = L.control({ position: "bottomright" });
+  legendTotalRefugees.onAdd = function() {
     var div = L.DomUtil.create("div", "info legend");
     var limits = totalrefugees.options.limits;
     console.log(limits)
@@ -150,7 +231,7 @@ $(".nav-tabs").on("click", "#envirotab", function () {
     console.log(colors)
     var labels = [];
     // Add min & max
-    var legendInfo = "<h1>Refugees in America</h1>" +
+    var legendInfo = "<h1>Total Refugees</h1>" +
       "<div class=\"labels\">" +
         "<div class=\"min\">" + limits[0] + "</div>" +
         "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
@@ -162,17 +243,63 @@ $(".nav-tabs").on("click", "#envirotab", function () {
     div.innerHTML += "<ul>" + labels.join("") + "</ul>";
     return div;
   };
+
+  var legendDestinations = L.control({ position: "bottomright" });
+  legendDestinations.onAdd = function() {
+    var div = L.DomUtil.create("div", "info legend");
+    var limits = ['Low','Some', 'Bit More', 'Still Goin', 'Almost', 'Noiiiice','Yowza', 'Reception','High'];
+    console.log(limits);
+    colors_list = ['#D3D3D3', '#BBBBC6', '#A4A4BA', '#8D8DAD', '#7676A1', '#5E5E95', '#474788', '#30307C', '#191970'];
+    var colors = colors_list;
+    console.log(colors);
+    var labels = [];
+    // Add min & max
+    var legendInfo = "<h1>Hosted Refugees</h1>" +
+      "<div class=\"labels\">" +
+        "<div class=\"min\">" + limits[0] + "</div>" +
+        "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
+      "</div>";
+    div.innerHTML = legendInfo;
+    limits.forEach(function(limit, index) {
+      labels.push("<li style=\"background-color: " + colors[index] + "\"></li>");
+    });
+    div.innerHTML += "<ul>" + labels.join("") + "</ul>";
+    return div;
+  };
+
+  legendDestinations.addTo(myMap);
+
+  myMap.on('baselayerchange', function (eventLayer) {
+    console.log("layer_change!  ", eventLayer.name)
+    if (eventLayer.name == 'Total Refugees') {
+        this.removeControl(legendDestinations);
+        legendTotalRefugees.addTo(this);
+    } else { // Or switch to the Population Change legend...
+        this.removeControl(legendTotalRefugees);
+        legendDestinations.addTo(this);
+    }
+  });
   // Adding legend to the map
-  legend.addTo(myMap);
+  // legend.addTo(myMap);
 // Pass our map layers into our layer control
 // Add the layer control to the map
 L.control.layers(overlayMaps, baseMaps, {
   collapsed: false
 }).addTo(myMap);
 
+<<<<<<< HEAD
  totalrefugees.eachLayer(function (layer) {
    layer._path.class = layer.feature.properties.iso_a3
+=======
+ destinations.eachLayer(function (layer) {
+   layer._path.id = layer.feature.properties.iso_a3
+>>>>>>> Brian
      })
+
+ totalrefugees.eachLayer(function (layer) {
+    layer._path.id = layer.feature.properties.iso_a3
+    })
+
 
 }
 

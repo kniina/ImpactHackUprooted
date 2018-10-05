@@ -91,6 +91,13 @@
             </div>
         </div>
       </div>
+      <!-- <div class="col-md-12">
+        <div class="row">
+          <br/>
+          <div id="overtime"></div>
+          <div id="overtime_2"></div>
+        </div>
+      </div> -->
 
     </div>
     </div>
@@ -542,6 +549,7 @@ scatter_svg.append("text")
       console.log(selected_country + "THIS ONE")
       update_labels();
 
+      return country_name;
   }
 
   // var country_name = ''
@@ -577,7 +585,7 @@ function get_related_news(country_name){
     var related_news = d3.select('#Newsfeed');
     related_news.html('');
 
-    for (i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
       related_news
         .append('div')
         .append('h4')

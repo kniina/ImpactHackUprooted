@@ -38,5 +38,30 @@ def refugees_origin_destination(ocode):
 
     return jsonify(return_array[0])
 
+# This part comes in if we copy the refugee destinations layer with an asylum_seeker destinations layer
+
+# @app.route("/as_origin_destination/<ocode>")
+# def as_origin_destination(ocode):
+#     """Info on asylum seekers from country of origin"""
+#     collection = mongo.db.asylum_seekers_coo_cod
+#
+#     keyCountries = collection.find({ocode: {'$exists':True}})
+#     return_array = list(keyCountries)
+#     del return_array[0]['_id']
+#     print(return_array)
+#
+#     return jsonify(return_array[0])
+
+# @app.route("/refugees_over_time/<ocode>")
+# def refugees_over_time(ocode):
+#     """Info on refugees from a single country of origin over time"""
+#     collection = mongo.db.coo_over_time
+#
+#     overtime = collection.find({ocode: {'$exists': True}})
+#     return_array = list(overtime)
+#     del return_array[0]['_id']
+#     print(return_array)
+#     return jsonify(return_array[0])
+
 if __name__=='__main__':
     app.run(debug=True)
